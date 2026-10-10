@@ -1,0 +1,36 @@
+# Netlify configuration for GMAT Focus Edition Adaptive Simulator
+
+[build]
+  command = "npm run build"
+  publish = "dist"
+  functions = "netlify/functions"
+
+# Redirect API calls to Netlify serverless functions if deployed
+[[redirects]]
+  from = "/api/health"
+  to = "/.netlify/functions/health"
+  status = 200
+
+[[redirects]]
+  from = "/api/generate-question"
+  to = "/.netlify/functions/generate-question"
+  status = 200
+
+[[redirects]]
+  from = "/api/extract-practice-test"
+  to = "/.netlify/functions/extract-practice-test"
+  status = 200
+
+[[redirects]]
+  from = "/api/generate-study-plan"
+  to = "/.netlify/functions/generate-study-plan"
+  status = 200
+
+# Client-side SPA routing fallback
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[build.environment]
+  NODE_VERSION = "20"

@@ -1,0 +1,6 @@
+{
+  "name": "GMAT Focus Edition Adaptive 805 Simulator",
+  "description": "Production-grade, psychometrically calibrated adaptive GMAT Focus Edition exam simulator with dynamic question generation, IRT 2PL scoring, dual-pass QA, and actionable 705+ analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
