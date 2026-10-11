@@ -1,0 +1,1742 @@
+{
+  "testNumber": 5,
+  "id": "pt_05",
+  "title": "Official Focus Mock #5 (Full 64-Q Simulation)",
+  "date": "2025-03-20",
+  "totalScore": 685,
+  "quantScore": 81,
+  "verbalScore": 81,
+  "dataInsightsScore": 80,
+  "structure": {
+    "quantQuestions": 21,
+    "verbalQuestions": 23,
+    "dataInsightsQuestions": 20,
+    "total": 64,
+    "durationMinutes": 135
+  },
+  "questions": [
+    {
+      "id": "pt05_q01",
+      "test": 5,
+      "section": "QUANT",
+      "type": "PROBLEM_SOLVING",
+      "subtopic": "Number Properties & Divisibility",
+      "difficulty": "medium",
+      "difficultyScore": 6,
+      "stem": "In semiconductor microfabrication & nanotech, a barcode serial integer $n$ satisfies that $n^2 - 1$ is divisible by prime $19$. If $1 < n < 19$, how many integer values can $n$ assume?",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "18"
+      ],
+      "answer": "B",
+      "explanation": "Since $n^2 - 1 = (n - 1)(n + 1)$ is divisible by prime 19, by Euclid's lemma either 19 divides $(n - 1)$ or 19 divides $(n + 1)$. Given $1 < n < 19$, $n - 1 < 19$, so 19 cannot divide $n - 1$. For 19 to divide $n + 1$, we must have $n + 1 = 19 \\implies n = 18$. Thus, exactly 1 integer value ($n = 18$) satisfies the condition.",
+      "trap": "Assuming both $(n - 1)$ and $(n + 1)$ can yield solutions within the open interval $(1, p)$.",
+      "estSeconds": 90
+    },
+    {
+      "id": "pt05_q02",
+      "test": 5,
+      "section": "QUANT",
+      "type": "PROBLEM_SOLVING",
+      "subtopic": "Word Problems & Rates/Work",
+      "difficulty": "medium",
+      "difficultyScore": 6,
+      "stem": "At NanoLitho Technologies, Cleanroom Fab Director monitors two operational units: Primary Unit Alpha completes a full cycle of silicon wafer photoresist etching in 9 hours working alone, whereas Secondary Unit Beta requires 18 hours alone. If both units operate simultaneously at their constant rates to complete the cycle on a shared extreme ultraviolet lithography scanner, how many hours will they take together?",
+      "options": [
+        "4.83",
+        "5.33",
+        "5.83",
+        "12.00",
+        "6.00"
+      ],
+      "answer": "B",
+      "explanation": "Combined rate $R = 1/8 + 1/16 = 3/16$. Time $T = 1/R = 16/3 = 5.33$ hours.",
+      "trap": "Taking the arithmetic average of the two individual times.",
+      "estSeconds: 85": 85,
+      "estSeconds": 85
+    },
+    {
+      "id": "pt05_q03",
+      "test": 5,
+      "section": "QUANT",
+      "type": "PROBLEM_SOLVING",
+      "subtopic": "Percents, Ratios & Mixtures",
+      "difficulty": "medium",
+      "difficultyScore": 6,
+      "stem": "A microchip foundry marks up silicon wafer fabrication costs by 45% for retail listings, then allows volume smartphone assemblers a 20% rebate. What net margin percentage is earned over fabrication cost?",
+      "options": [
+        "20.0%",
+        "16.0%",
+        "25.0%",
+        "20.0%",
+        "30.0%"
+      ],
+      "answer": "B",
+      "explanation": "Multiplier $= (1 + 0.45) \\times (1 - 0.2) = 1.1600$. Net profit percentage $= (1.1600 - 1) \\times 100 = 16.0\\%$.",
+      "trap": "Subtracting the percentages directly (45% - 20% = 25%).",
+      "estSeconds": 90
+    },
+    {
+      "id": "pt05_q04",
+      "test": 5,
+      "section": "QUANT",
+      "type": "PROBLEM_SOLVING",
+      "subtopic": "Algebra & Exponents",
+      "difficulty": "hard",
+      "difficultyScore": 8,
+      "stem": "In a mathematical model tracking photoresist etching at NanoLitho Technologies, the exponent variable $x$ satisfies $3^{2x+1} - $3^{2x-1} = 17496$. What is the value of $x^2 + x$?",
+      "options": [
+        "10",
+        "12",
+        "14",
+        "16",
+        "15"
+      ],
+      "answer": "B",
+      "explanation": "Factor out $2^{2x-1}$: $2^{2x-1}(2^2 - 1) = 32(2^2 - 1)$. Equating exponents: $2x - 1 = 5 \\implies 2x = 6 \\implies x = 3$. Then $x^2 + x = 3^2 + 3 = 12$.",
+      "trap": "Miscalculating the factored term $(base^2 - 1)$.",
+      "estSeconds": 100
+    },
+    {
+      "id": "pt05_q05",
+      "test": 5,
+      "section": "QUANT",
+      "type": "PROBLEM_SOLVING",
+      "subtopic": "Inequalities & Absolute Values",
+      "difficulty": "hard",
+      "difficultyScore": 8,
+      "stem": "During a tolerance check on extreme ultraviolet lithography scanner measurements at NanoLitho Technologies, how many integer values of $k$ satisfy the inequality $|2k - 10| \\le 21$?",
+      "options": [
+        "19",
+        "20",
+        "21",
+        "22",
+        "18"
+      ],
+      "answer": "B",
+      "explanation": "Expand absolute value: $-19 \\le 2k - 9 \\le 19 \\implies -10 \\le 2k \\le 28 \\implies -5.0 \\le k \\le 14.0$. Length of interval for integers is strictly 20.",
+      "trap": "Neglecting to include both endpoints when calculating inclusive integer count.",
+      "estSeconds": 95
+    },
+    {
+      "id": "pt05_q06",
+      "test": 5,
+      "section": "QUANT",
+      "type": "PROBLEM_SOLVING",
+      "subtopic": "Statistics & Standard Deviation",
+      "difficulty": "hard",
+      "difficultyScore": 8,
+      "stem": "A cleanroom sensor records 7 distinct positive integer defect counts across production shifts, finding a median count of 24 and an average of 29. What is the maximum possible count for the worst shift?",
+      "options": [
+        "143",
+        "145",
+        "147",
+        "149",
+        "151"
+      ],
+      "answer": "C",
+      "explanation": "To maximize $x_7$, minimize elements 1, 2, 3, 5, 6. Minimum distinct positive integers: $x_1=1, x_2=2, x_3=3$. Given median $x_4 = 32$. Minimum distinct integers above median: $x_5 = 33, x_6 = 34$. Sum of all 7 integers $= 7 \\times 36 = 252$. Subtracting the 6 minimal values leaves maximum $x_7 = 147$.",
+      "trap": "Allowing integers above median to equal the median rather than being strictly distinct.",
+      "estSeconds": 115
+    },
+    {
+      "id": "pt05_q07",
+      "test": 5,
+      "section": "QUANT",
+      "type": "PROBLEM_SOLVING",
+      "subtopic": "Probability & Combinatorics",
+      "difficulty": "hard",
+      "difficultyScore": 8,
+      "stem": "A semiconductor fab task force of 4 technicians is staffed from 6 lithography specialists and 4 etching engineers. If at least 2 of each specialization must participate, how many task forces can be configured?",
+      "options": [
+        "80",
+        "85",
+        "90",
+        "95",
+        "100"
+      ],
+      "answer": "C",
+      "explanation": "Ways to select 2 hardware engineers from 6: $\\binom{6}{2} = 15$. Ways to select 2 software architects from 4: $\\binom{4}{2} = 6$. Total distinct combinations $= 15 \\times 6 = 90$.",
+      "trap": "Adding the combinations instead of multiplying.",
+      "estSeconds": 105
+    },
+    {
+      "id": "pt05_q08",
+      "test": 5,
+      "section": "QUANT",
+      "type": "PROBLEM_SOLVING",
+      "subtopic": "Number Properties & Divisibility",
+      "difficulty": "hard",
+      "difficultyScore": 8,
+      "stem": "In microchip lithography patterning combinations, what is the greatest integer $k$ such that $3^k$ divides $55!$ evenly?",
+      "options": [
+        "12",
+        "13",
+        "14",
+        "15",
+        "16"
+      ],
+      "answer": "C",
+      "explanation": "Powers of 10 in a factorial are limited by prime factor 5. Using Legendre's formula: $\\lfloor 60/5 \\rfloor + \\lfloor 60/25 \\rfloor = 12 + 2 = 14$. Thus $k = 14$.",
+      "trap": "Counting powers of 2 or stopping after first division by 5.",
+      "estSeconds": 90
+    },
+    {
+      "id": "pt05_q09",
+      "test": 5,
+      "section": "QUANT",
+      "type": "PROBLEM_SOLVING",
+      "subtopic": "Word Problems & Rates/Work",
+      "difficulty": "medium",
+      "difficultyScore": 7,
+      "stem": "A dedicated freight van transporting silicon wafers travels an outbound highway route at 47 mph, and returns along the same route at 94 mph. What is the van's average speed for the full trip?",
+      "options": [
+        "58.8",
+        "62.0",
+        "60.8",
+        "56.8",
+        "63.5"
+      ],
+      "answer": "A",
+      "explanation": "Average speed over equal distances is the harmonic mean: $V = \\frac{2 s_1 s_2}{s_1 + s_2} = \\frac{2 \\times 48 \\times 76}{124} = 58.8$ mph.",
+      "trap": "Choosing the arithmetic mean (option B).",
+      "estSeconds": 80
+    },
+    {
+      "id": "pt05_q10",
+      "test": 5,
+      "section": "QUANT",
+      "type": "PROBLEM_SOLVING",
+      "subtopic": "Percents, Ratios & Mixtures",
+      "difficulty": "hard",
+      "difficultyScore": 8,
+      "stem": "A semiconductor etching bath holds 65 liters of chemical solvent with a 30% acid concentration. How many liters of deionized water must be mixed in to reduce the concentration to exactly 15%?",
+      "options": [
+        "50",
+        "52",
+        "54",
+        "56",
+        "58"
+      ],
+      "answer": "C",
+      "explanation": "Solvent mass is constant: $0.25 \\times 50 = 0.12 \\times (50 + w) \\implies 50 + w = 104 \\implies w = 54$ liters.",
+      "trap": "Reporting total final volume rather than added water.",
+      "estSeconds": 95
+    },
+    {
+      "id": "pt05_q11",
+      "test": 5,
+      "section": "QUANT",
+      "type": "PROBLEM_SOLVING",
+      "subtopic": "Sequences & Series",
+      "difficulty": "medium",
+      "difficultyScore": 6,
+      "stem": "In an arithmetic sequence monitoring semiconductor microfabrication & nanotech production batches, the first term is 8 and the common difference between consecutive terms is 4. What is the sum of the first 15 terms of this sequence?",
+      "options": [
+        "525",
+        "532",
+        "540",
+        "548",
+        "555"
+      ],
+      "answer": "C",
+      "explanation": "Sum formula $S_{15} = \\frac{15}{2} [2(8) + 14(4)] = 15 \\times [8 + 7(4)] = 540$.",
+      "trap": "Using 15d instead of (n-1)d in the summation formula.",
+      "estSeconds": 90
+    },
+    {
+      "id": "pt05_q12",
+      "test": 5,
+      "section": "QUANT",
+      "type": "PROBLEM_SOLVING",
+      "subtopic": "Word Problems & Overlapping Sets",
+      "difficulty": "medium",
+      "difficultyScore": 7,
+      "stem": "Among 140 technical facilities surveyed in semiconductor microfabrication & nanotech, 66 have implemented Protocol A, 56 have implemented Protocol B, and 14 have implemented neither. How many facilities have implemented BOTH Protocol A and Protocol B?",
+      "options": [
+        "-8",
+        "-6",
+        "-4",
+        "-2",
+        "0"
+      ],
+      "answer": "C",
+      "explanation": "Facilities with at least one protocol $= 140 - 14 = 126$. By inclusion-exclusion: $|A \\cap B| = |A| + |B| - |A \\cup B| = 66 + 56 - 126 = -4$.",
+      "trap": "Subtracting neither from both sets individually.",
+      "estSeconds": 85
+    },
+    {
+      "id": "pt05_q13",
+      "test": 5,
+      "section": "QUANT",
+      "type": "PROBLEM_SOLVING",
+      "subtopic": "Probability & Combinatorics",
+      "difficulty": "hard",
+      "difficultyScore": 8,
+      "stem": "A cleanroom tool kit contains 6 red laser alignment pins and 8 blue alignment pins. If a technician draws 3 pins at random without replacement, what is the probability that exactly 2 are red?",
+      "options": [
+        "\\frac{19}{45}",
+        "\\frac{20}{45}",
+        "\\frac{21}{45}",
+        "\\frac{22}{45}",
+        "\\frac{23}{45}"
+      ],
+      "answer": "C",
+      "explanation": "Ways to draw two compliant parts: $\\binom{6}{2} = 15$. Ways to draw two defective parts: $\\binom{4}{2} = 6$. Total favorable $= 21$. Total unrestricted pairs: $\\binom{10}{2} = 45$. Probability $= 21/45$.",
+      "trap": "Assuming sampling with replacement.",
+      "estSeconds": 100
+    },
+    {
+      "id": "pt05_q14",
+      "test": 5,
+      "section": "QUANT",
+      "type": "PROBLEM_SOLVING",
+      "subtopic": "Algebra & Quadratics",
+      "difficulty": "hard",
+      "difficultyScore": 8,
+      "stem": "A semiconductor photolithography beam profile quadratic $x^2 - 20x + K = 0$ possesses two positive integer roots differing by 2. What is the value of $K$?",
+      "options": [
+        "76",
+        "78",
+        "80",
+        "82",
+        "84"
+      ],
+      "answer": "C",
+      "explanation": "Let roots be $r_1$ and $r_2$. Sum $r_1 + r_2 = 18$, and difference $r_2 - r_1 = 2$. Solving gives roots $r_1 = 8$ and $r_2 = 10$. By Vieta's formulas, $K = r_1 \\times r_2 = 8 \\times 10 = 80$.",
+      "trap": "Adding the roots rather than multiplying for the constant term $K$.",
+      "estSeconds": 85
+    },
+    {
+      "id": "pt05_q15",
+      "test": 5,
+      "section": "QUANT",
+      "type": "PROBLEM_SOLVING",
+      "subtopic": "Number Properties & Divisibility",
+      "difficulty": "hard",
+      "difficultyScore": 9,
+      "stem": "In an algorithmic encryption routine for semiconductor euv nanotechnology, what is the units digit of the integer evaluation $7^{63} + 3$?",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "answer": "C",
+      "explanation": "Powers of 7 cycle in units digits: $7^1 \\rightarrow 7, 7^2 \\rightarrow 9, 7^3 \\rightarrow 3, 7^4 \\rightarrow 1$. Exponent $59 \\equiv 3 \\pmod 4$, so $7^{59}$ ends in 3. Adding 3 gives a units digit of $(3 + 3) \\pmod 10 = 6$.",
+      "trap": "Failing to apply base-4 cyclicity to the exponent.",
+      "estSeconds": 80
+    },
+    {
+      "id": "pt05_q16",
+      "test": 5,
+      "section": "QUANT",
+      "type": "PROBLEM_SOLVING",
+      "subtopic": "Coordinate & Analytical Geometry",
+      "difficulty": "medium",
+      "difficultyScore": 6,
+      "stem": "In a Cartesian telemetry grid mapping extreme ultraviolet lithography scanner coordinates for NanoLitho Technologies, line $L_1$ passes through $(0, 10)$ and $(8, 0)$. If perpendicular line $L_2$ intersects the origin $(0, 0)$, what is the slope of line $L_2$?",
+      "options": [
+        "\\frac{7}{9}",
+        "-\\frac{7}{9}",
+        "\\frac{9}{7}",
+        "-\\frac{9}{7}",
+        "1"
+      ],
+      "answer": "A",
+      "explanation": "Slope of $L_1$ is $m_1 = \\frac{0 - 9}{7 - 0} = -\\frac{9}{7}$. Perpendicular slope $m_2 = -1/m_1 = \\frac{7}{9}$.",
+      "trap": "Inverting without negating (option B or C).",
+      "estSeconds: 75": 75,
+      "estSeconds": 75
+    },
+    {
+      "id": "pt05_q17",
+      "test": 5,
+      "section": "QUANT",
+      "type": "PROBLEM_SOLVING",
+      "subtopic": "Statistics & Standard Deviation",
+      "difficulty": "hard",
+      "difficultyScore": 8,
+      "stem": "In a sensor calibration test in semiconductor microfabrication & nanotech, the standard deviation of pressure readings was 4.5 psi. If each reading is multiplied by 1.25 and then decreased by 3.5 psi, what is the standard deviation of the transformed readings in psi?",
+      "options": [
+        "2.12",
+        "5.62",
+        "4.50",
+        "9.12",
+        "6.75"
+      ],
+      "answer": "B",
+      "explanation": "Standard deviation is unaffected by the subtraction of a constant (-3.5), but scales by $|1.25|$: $\\sigma_{new} = 1.25 \\times 4.5 = 5.62$ psi.",
+      "trap": "Subtracting 3.5 from the standard deviation (option A).",
+      "estSeconds": 70
+    },
+    {
+      "id": "pt05_q18",
+      "test": 5,
+      "section": "QUANT",
+      "type": "PROBLEM_SOLVING",
+      "subtopic": "Word Problems & Rates/Work",
+      "difficulty": "hard",
+      "difficultyScore": 9,
+      "stem": "In semiconductor euv nanotechnology, replacement parts for extreme ultraviolet lithography scanner at NanoLitho Technologies are packaged strictly in quantities of 5 or 8 units. What is the greatest integer number of units that cannot be assembled using non-negative combinations of these packages?",
+      "options": [
+        "15",
+        "16",
+        "17",
+        "18",
+        "19"
+      ],
+      "answer": "C",
+      "explanation": "By the Frobenius Coin Formula for coprime integers $a$ and $b$, the largest non-constructible integer is $ab - a - b = (4)(7) - 4 - 7 = 17$.",
+      "trap": "Computing ab directly without subtracting (a + b).",
+      "estSeconds": 110
+    },
+    {
+      "id": "pt05_q19",
+      "test": 5,
+      "section": "QUANT",
+      "type": "PROBLEM_SOLVING",
+      "subtopic": "Number Properties & Divisibility",
+      "difficulty": "hard",
+      "difficultyScore": 8,
+      "stem": "When the two digits of microchip serial number $N$ are transposed, the resulting number is 36 larger than $N$. What is the difference between its units and tens digits?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "answer": "C",
+      "explanation": "$(10B + A) - (10A + B) = 9(B - A) = 27 \\implies B - A = 3$.",
+      "trap": "Confusing (B - A) with (A - B).",
+      "estSeconds": 75
+    },
+    {
+      "id": "pt05_q20",
+      "test": 5,
+      "section": "QUANT",
+      "type": "PROBLEM_SOLVING",
+      "subtopic": "Percents, Ratios & Mixtures",
+      "difficulty": "hard",
+      "difficultyScore": 8,
+      "stem": "A capital expenditure allocation of $\\$8,000$ in semiconductor microfabrication & nanotech appreciates at an annual rate of 10% compounded semi-annually. What is the total accumulated interest after 1 year?",
+      "options": [
+        "\\$800",
+        "\\$820",
+        "\\$840",
+        "\\$880",
+        "\\$900"
+      ],
+      "answer": "B",
+      "explanation": "Semi-annual rate is 5% over 2 periods. Multiplier is $(1.05)^2 = 1.1025$. Interest $= 8000 \\times 0.1025 = \\$820$.",
+      "trap": "Calculating simple interest at 10% (option A).",
+      "estSeconds": 90
+    },
+    {
+      "id": "pt05_q21",
+      "test": 5,
+      "section": "QUANT",
+      "type": "PROBLEM_SOLVING",
+      "subtopic": "Algebra & Exponents",
+      "difficulty": "hard",
+      "difficultyScore": 9,
+      "stem": "For all positive real numbers $u$ and $v$ modeling photoresist etching at NanoLitho Technologies, an operational operator $\\star$ is defined by $u \\star v = \\frac{u^2 - v^2}{u - v}$. What is the numerical value of $11 \\star 3$?",
+      "options": [
+        "\\frac{2}{2}",
+        "\\frac{2}{3}",
+        "\\frac{2}{4}",
+        "2",
+        "1"
+      ],
+      "answer": "B",
+      "explanation": "$2 \\diamond 2 = \\frac{2 \\times 2}{2 + 2 + 2} = \\frac{2^2}{3(2)} = \\frac{2}{3}$.",
+      "trap": "Adding the constants in the denominator incorrectly.",
+      "estSeconds": 85
+    },
+    {
+      "id": "pt05_v01",
+      "test": 5,
+      "section": "VERBAL",
+      "type": "READING_COMPREHENSION",
+      "subtopic": "Reading Comprehension",
+      "difficulty": "medium",
+      "difficultyScore": 6,
+      "passage": "Classical fixed-wing aerodynamic theory consistently failed to explain the remarkable hovering and slow-flight maneuverability observed in swifts and hummingbirds. Standard steady-state airflow models predicted that the high angles of attack utilized during rapid deceleration would induce immediate aerodynamic stall, resulting in catastrophic loss of lift.\n\nHigh-speed digital particle image velocimetry reveals that avian wings generate unsteady, dynamically stabilized leading-edge vortices (LEVs) on the dorsal wing surface during the downstroke. By delaying boundary-layer separation and creating localized low-pressure zones, these sustained vortices boost lift coefficients by more than double the theoretical maximum predicted by classical aeronautical equations.",
+      "stem": "The primary purpose of the passage on avian aerodynamics & leading-edge vortices is to:",
+      "options": [
+        "Refute an established scientific doctrine by demonstrating that earlier measurements were entirely fraudulent.",
+        "Challenge a traditional foundational model by presenting recent empirical evidence that supports an alternative paradigm.",
+        "Reconcile two competing historical hypotheses by proposing a hybrid theoretical compromise.",
+        "Advocate for the immediate cessation of field testing until biochemical instruments are standardized.",
+        "Prove that evolutionary biological adaptations occur exclusively through physical genomic sequence alterations."
+      ],
+      "answer": "B",
+      "explanation": "The passage outlines a traditional, long-standing theoretical assumption in its opening paragraph, then introduces modern empirical methodologies that challenge that framework and suggest a more dynamic mechanism.",
+      "trap": "Selecting option A, which uses extreme, accusatory language ('entirely fraudulent') unsupported by the text.",
+      "estSeconds": 100
+    },
+    {
+      "id": "pt05_v02",
+      "test": 5,
+      "section": "VERBAL",
+      "type": "READING_COMPREHENSION",
+      "subtopic": "Reading Comprehension",
+      "difficulty": "hard",
+      "difficultyScore": 8,
+      "passage": "Classical fixed-wing aerodynamic theory consistently failed to explain the remarkable hovering and slow-flight maneuverability observed in swifts and hummingbirds. Standard steady-state airflow models predicted that the high angles of attack utilized during rapid deceleration would induce immediate aerodynamic stall, resulting in catastrophic loss of lift.\n\nHigh-speed digital particle image velocimetry reveals that avian wings generate unsteady, dynamically stabilized leading-edge vortices (LEVs) on the dorsal wing surface during the downstroke. By delaying boundary-layer separation and creating localized low-pressure zones, these sustained vortices boost lift coefficients by more than double the theoretical maximum predicted by classical aeronautical equations.",
+      "stem": "It can be inferred from the passage on avian aerodynamics & leading-edge vortices that proponents of the earlier model assumed that:",
+      "options": [
+        "Biological systems exhibit extensive behavioral plasticity when subjected to environmental shifts.",
+        "Observed physical phenomena were governed primarily by static or localized equilibrium constraints.",
+        "Molecular sequencing technologies would permanently confirm traditional observational hypotheses.",
+        "Nutrient availability was completely uniform across all ecological micro-habitats.",
+        "Adaptive modifications could be transmitted across generations without physical nucleotide changes."
+      ],
+      "answer": "B",
+      "explanation": "The passage notes that the classical model assumed static, rigid constraints (e.g., rigid niche partitioning, exclusive nucleotide dependence, or uniform competition) before modern dynamic evidence emerged.",
+      "trap": "Confusing the revisionist perspective with the traditional hypothesis being evaluated.",
+      "estSeconds": 110
+    },
+    {
+      "id": "pt05_v03",
+      "test": 5,
+      "section": "VERBAL",
+      "type": "READING_COMPREHENSION",
+      "subtopic": "Reading Comprehension",
+      "difficulty": "medium",
+      "difficultyScore": 7,
+      "passage": "Classical fixed-wing aerodynamic theory consistently failed to explain the remarkable hovering and slow-flight maneuverability observed in swifts and hummingbirds. Standard steady-state airflow models predicted that the high angles of attack utilized during rapid deceleration would induce immediate aerodynamic stall, resulting in catastrophic loss of lift.\n\nHigh-speed digital particle image velocimetry reveals that avian wings generate unsteady, dynamically stabilized leading-edge vortices (LEVs) on the dorsal wing surface during the downstroke. By delaying boundary-layer separation and creating localized low-pressure zones, these sustained vortices boost lift coefficients by more than double the theoretical maximum predicted by classical aeronautical equations.",
+      "stem": "According to the second paragraph of the passage on avian aerodynamics & leading-edge vortices, the newly discovered mechanism is significant primarily because it:",
+      "options": [
+        "Eliminates all scientific uncertainty surrounding global atmospheric convection.",
+        "Demonstrates that biological entities can adapt or function through pathways previously deemed impossible or secondary.",
+        "Proves that evolutionary mutations occur at a constant mathematical rate across geological epochs.",
+        "Forces commercial enterprises to halt exploratory drilling operations immediately.",
+        "Refutes the universal applicability of thermodynamic physical laws."
+      ],
+      "answer": "B",
+      "explanation": "Paragraph 2 reveals an independent or dynamic pathway (e.g. chemolithoautotrophy, epigenetic inheritance, leading-edge vortices, or mycorrhizal resource sharing) that classical science deemed impossible or minor.",
+      "trap": "Selecting an overly grandiose claim that the finding overturns fundamental thermodynamic laws (option E).",
+      "estSeconds": 95
+    },
+    {
+      "id": "pt05_v04",
+      "test": 5,
+      "section": "VERBAL",
+      "type": "READING_COMPREHENSION",
+      "subtopic": "Reading Comprehension",
+      "difficulty": "hard",
+      "difficultyScore": 8,
+      "passage": "Classical fixed-wing aerodynamic theory consistently failed to explain the remarkable hovering and slow-flight maneuverability observed in swifts and hummingbirds. Standard steady-state airflow models predicted that the high angles of attack utilized during rapid deceleration would induce immediate aerodynamic stall, resulting in catastrophic loss of lift.\n\nHigh-speed digital particle image velocimetry reveals that avian wings generate unsteady, dynamically stabilized leading-edge vortices (LEVs) on the dorsal wing surface during the downstroke. By delaying boundary-layer separation and creating localized low-pressure zones, these sustained vortices boost lift coefficients by more than double the theoretical maximum predicted by classical aeronautical equations.",
+      "stem": "The author\u2019s attitude toward the traditional scientific framework in avian aerodynamics & leading-edge vortices can best be described as:",
+      "options": [
+        "Uncompromisingly hostile and dismissive of historical scholars.",
+        "Respectful of its historical role while emphasizing its conceptual limitations in light of recent findings.",
+        "Enthusiastically supportive of its continuing supremacy over modern data.",
+        "Indifferent to its theoretical and practical consequences.",
+        "Skeptical of whether any scientific paradigm can ever be empirically tested."
+      ],
+      "answer": "B",
+      "explanation": "The author treats the historical paradigm with measured academic respect ('long held', 'classical framework') while clearly identifying its empirical limitations.",
+      "trap": "Choosing an exaggerated emotional descriptor like hostile or indifferent.",
+      "estSeconds": 100
+    },
+    {
+      "id": "pt05_v05",
+      "test": 5,
+      "section": "VERBAL",
+      "type": "READING_COMPREHENSION",
+      "subtopic": "Reading Comprehension",
+      "difficulty": "hard",
+      "difficultyScore": 7,
+      "passage": "Classical fixed-wing aerodynamic theory consistently failed to explain the remarkable hovering and slow-flight maneuverability observed in swifts and hummingbirds. Standard steady-state airflow models predicted that the high angles of attack utilized during rapid deceleration would induce immediate aerodynamic stall, resulting in catastrophic loss of lift.\n\nHigh-speed digital particle image velocimetry reveals that avian wings generate unsteady, dynamically stabilized leading-edge vortices (LEVs) on the dorsal wing surface during the downstroke. By delaying boundary-layer separation and creating localized low-pressure zones, these sustained vortices boost lift coefficients by more than double the theoretical maximum predicted by classical aeronautical equations.",
+      "stem": "In the discussion of the early Earth atmosphere, which photochemical calculations revealed the organic smog cooling ceiling limiting primitive archaean methane warming?",
+      "options": [
+        "Incorporate dynamic, non-linear mechanisms alongside classical equilibrium factors.",
+        "Discard all empirical data gathered prior to the implementation of molecular sequencing.",
+        "Assume that environmental stressors produce identical physiological outcomes in all phyla.",
+        "Treat biological organisms as strictly autonomous competitive units in all ecological contexts.",
+        "Rely solely on theoretical computer simulations rather than field sampling."
+      ],
+      "answer": "A",
+      "explanation": "The overarching conclusion of the passage on avian aerodynamics & leading-edge vortices is that emerging empirical discoveries necessitate integrating flexible, dynamic models with foundational scientific principles.",
+      "trap": "Selecting an answer that advises discarding all historical scientific work.",
+      "estSeconds": 105
+    },
+    {
+      "id": "pt05_v06",
+      "test": 5,
+      "section": "VERBAL",
+      "type": "READING_COMPREHENSION",
+      "subtopic": "Reading Comprehension",
+      "difficulty": "medium",
+      "difficultyScore": 8,
+      "passage": "Classical fixed-wing aerodynamic theory consistently failed to explain the remarkable hovering and slow-flight maneuverability observed in swifts and hummingbirds. Standard steady-state airflow models predicted that the high angles of attack utilized during rapid deceleration would induce immediate aerodynamic stall, resulting in catastrophic loss of lift.\n\nHigh-speed digital particle image velocimetry reveals that avian wings generate unsteady, dynamically stabilized leading-edge vortices (LEVs) on the dorsal wing surface during the downstroke. By delaying boundary-layer separation and creating localized low-pressure zones, these sustained vortices boost lift coefficients by more than double the theoretical maximum predicted by classical aeronautical equations.",
+      "stem": "The author would be most likely to agree with which conclusion regarding thermal equilibrium in the early Archaean biosphere?",
+      "options": [
+        "Incorporate dynamic, non-linear mechanisms alongside classical equilibrium factors.",
+        "Discard all empirical data gathered prior to the implementation of molecular sequencing.",
+        "Assume that environmental stressors produce identical physiological outcomes in all phyla.",
+        "Treat biological organisms as strictly autonomous competitive units in all ecological contexts.",
+        "Rely solely on theoretical computer simulations rather than field sampling."
+      ],
+      "answer": "A",
+      "explanation": "The overarching conclusion of the passage on avian aerodynamics & leading-edge vortices is that emerging empirical discoveries necessitate integrating flexible, dynamic models with foundational scientific principles.",
+      "trap": "Selecting an answer that advises discarding all historical scientific work.",
+      "estSeconds": 105
+    },
+    {
+      "id": "pt05_v07",
+      "test": 5,
+      "section": "VERBAL",
+      "type": "READING_COMPREHENSION",
+      "subtopic": "Reading Comprehension",
+      "difficulty": "hard",
+      "difficultyScore": 9,
+      "passage": "Classical fixed-wing aerodynamic theory consistently failed to explain the remarkable hovering and slow-flight maneuverability observed in swifts and hummingbirds. Standard steady-state airflow models predicted that the high angles of attack utilized during rapid deceleration would induce immediate aerodynamic stall, resulting in catastrophic loss of lift.\n\nHigh-speed digital particle image velocimetry reveals that avian wings generate unsteady, dynamically stabilized leading-edge vortices (LEVs) on the dorsal wing surface during the downstroke. By delaying boundary-layer separation and creating localized low-pressure zones, these sustained vortices boost lift coefficients by more than double the theoretical maximum predicted by classical aeronautical equations.",
+      "stem": "How does the author systematically organize the scientific argument concerning Archaean atmospheric haze feedbacks?",
+      "options": [
+        "Incorporate dynamic, non-linear mechanisms alongside classical equilibrium factors.",
+        "Discard all empirical data gathered prior to the implementation of molecular sequencing.",
+        "Assume that environmental stressors produce identical physiological outcomes in all phyla.",
+        "Treat biological organisms as strictly autonomous competitive units in all ecological contexts.",
+        "Rely solely on theoretical computer simulations rather than field sampling."
+      ],
+      "answer": "A",
+      "explanation": "The overarching conclusion of the passage on avian aerodynamics & leading-edge vortices is that emerging empirical discoveries necessitate integrating flexible, dynamic models with foundational scientific principles.",
+      "trap": "Selecting an answer that advises discarding all historical scientific work.",
+      "estSeconds": 105
+    },
+    {
+      "id": "pt05_v08",
+      "test": 5,
+      "section": "VERBAL",
+      "type": "READING_COMPREHENSION",
+      "subtopic": "Reading Comprehension",
+      "difficulty": "medium",
+      "difficultyScore": 7,
+      "passage": "Classical fixed-wing aerodynamic theory consistently failed to explain the remarkable hovering and slow-flight maneuverability observed in swifts and hummingbirds. Standard steady-state airflow models predicted that the high angles of attack utilized during rapid deceleration would induce immediate aerodynamic stall, resulting in catastrophic loss of lift.\n\nHigh-speed digital particle image velocimetry reveals that avian wings generate unsteady, dynamically stabilized leading-edge vortices (LEVs) on the dorsal wing surface during the downstroke. By delaying boundary-layer separation and creating localized low-pressure zones, these sustained vortices boost lift coefficients by more than double the theoretical maximum predicted by classical aeronautical equations.",
+      "stem": "The second paragraph of the text on early planetary climate primarily concentrates on the self-limiting effect of:",
+      "options": [
+        "Incorporate dynamic, non-linear mechanisms alongside classical equilibrium factors.",
+        "Discard all empirical data gathered prior to the implementation of molecular sequencing.",
+        "Assume that environmental stressors produce identical physiological outcomes in all phyla.",
+        "Treat biological organisms as strictly autonomous competitive units in all ecological contexts.",
+        "Rely solely on theoretical computer simulations rather than field sampling."
+      ],
+      "answer": "A",
+      "explanation": "The overarching conclusion of the passage on avian aerodynamics & leading-edge vortices is that emerging empirical discoveries necessitate integrating flexible, dynamic models with foundational scientific principles.",
+      "trap": "Selecting an answer that advises discarding all historical scientific work.",
+      "estSeconds": 105
+    },
+    {
+      "id": "pt05_v09",
+      "test": 5,
+      "section": "VERBAL",
+      "type": "READING_COMPREHENSION",
+      "subtopic": "Reading Comprehension",
+      "difficulty": "hard",
+      "difficultyScore": 8,
+      "passage": "Classical fixed-wing aerodynamic theory consistently failed to explain the remarkable hovering and slow-flight maneuverability observed in swifts and hummingbirds. Standard steady-state airflow models predicted that the high angles of attack utilized during rapid deceleration would induce immediate aerodynamic stall, resulting in catastrophic loss of lift.\n\nHigh-speed digital particle image velocimetry reveals that avian wings generate unsteady, dynamically stabilized leading-edge vortices (LEVs) on the dorsal wing surface during the downstroke. By delaying boundary-layer separation and creating localized low-pressure zones, these sustained vortices boost lift coefficients by more than double the theoretical maximum predicted by classical aeronautical equations.",
+      "stem": "The author cites general circulation models predicting runaway greenhouse warming primarily to:",
+      "options": [
+        "Incorporate dynamic, non-linear mechanisms alongside classical equilibrium factors.",
+        "Discard all empirical data gathered prior to the implementation of molecular sequencing.",
+        "Assume that environmental stressors produce identical physiological outcomes in all phyla.",
+        "Treat biological organisms as strictly autonomous competitive units in all ecological contexts.",
+        "Rely solely on theoretical computer simulations rather than field sampling."
+      ],
+      "answer": "A",
+      "explanation": "The overarching conclusion of the passage on avian aerodynamics & leading-edge vortices is that emerging empirical discoveries necessitate integrating flexible, dynamic models with foundational scientific principles.",
+      "trap": "Selecting an answer that advises discarding all historical scientific work.",
+      "estSeconds": 105
+    },
+    {
+      "id": "pt05_v10",
+      "test": 5,
+      "section": "VERBAL",
+      "type": "READING_COMPREHENSION",
+      "subtopic": "Reading Comprehension",
+      "difficulty": "medium",
+      "difficultyScore": 9,
+      "passage": "Classical fixed-wing aerodynamic theory consistently failed to explain the remarkable hovering and slow-flight maneuverability observed in swifts and hummingbirds. Standard steady-state airflow models predicted that the high angles of attack utilized during rapid deceleration would induce immediate aerodynamic stall, resulting in catastrophic loss of lift.\n\nHigh-speed digital particle image velocimetry reveals that avian wings generate unsteady, dynamically stabilized leading-edge vortices (LEVs) on the dorsal wing surface during the downstroke. By delaying boundary-layer separation and creating localized low-pressure zones, these sustained vortices boost lift coefficients by more than double the theoretical maximum predicted by classical aeronautical equations.",
+      "stem": "Based on the atmospheric haze model, how would planetary scientists interpret high methane-to-CO2 ratios detected in an exoplanet biosphere?",
+      "options": [
+        "Incorporate dynamic, non-linear mechanisms alongside classical equilibrium factors.",
+        "Discard all empirical data gathered prior to the implementation of molecular sequencing.",
+        "Assume that environmental stressors produce identical physiological outcomes in all phyla.",
+        "Treat biological organisms as strictly autonomous competitive units in all ecological contexts.",
+        "Rely solely on theoretical computer simulations rather than field sampling."
+      ],
+      "answer": "A",
+      "explanation": "The overarching conclusion of the passage on avian aerodynamics & leading-edge vortices is that emerging empirical discoveries necessitate integrating flexible, dynamic models with foundational scientific principles.",
+      "trap": "Selecting an answer that advises discarding all historical scientific work.",
+      "estSeconds": 105
+    },
+    {
+      "id": "pt05_v11",
+      "test": 5,
+      "section": "VERBAL",
+      "type": "READING_COMPREHENSION",
+      "subtopic": "Reading Comprehension",
+      "difficulty": "hard",
+      "difficultyScore": 7,
+      "passage": "Classical fixed-wing aerodynamic theory consistently failed to explain the remarkable hovering and slow-flight maneuverability observed in swifts and hummingbirds. Standard steady-state airflow models predicted that the high angles of attack utilized during rapid deceleration would induce immediate aerodynamic stall, resulting in catastrophic loss of lift.\n\nHigh-speed digital particle image velocimetry reveals that avian wings generate unsteady, dynamically stabilized leading-edge vortices (LEVs) on the dorsal wing surface during the downstroke. By delaying boundary-layer separation and creating localized low-pressure zones, these sustained vortices boost lift coefficients by more than double the theoretical maximum predicted by classical aeronautical equations.",
+      "stem": "The passage indicates that future scientific and operational frameworks in semiconductor euv nanotechnology will be required to:",
+      "options": [
+        "Incorporate dynamic, non-linear mechanisms alongside classical equilibrium factors.",
+        "Discard all empirical data gathered prior to the implementation of molecular sequencing.",
+        "Assume that environmental stressors produce identical physiological outcomes in all phyla.",
+        "Treat biological organisms as strictly autonomous competitive units in all ecological contexts.",
+        "Rely solely on theoretical computer simulations rather than field sampling."
+      ],
+      "answer": "A",
+      "explanation": "The overarching conclusion of the passage on avian aerodynamics & leading-edge vortices is that emerging empirical discoveries necessitate integrating flexible, dynamic models with foundational scientific principles.",
+      "trap": "Selecting an answer that advises discarding all historical scientific work.",
+      "estSeconds": 105
+    },
+    {
+      "id": "pt05_v12",
+      "test": 5,
+      "section": "VERBAL",
+      "type": "CRITICAL_REASONING",
+      "subtopic": "Critical Reasoning",
+      "difficulty": "hard",
+      "difficultyScore": 8,
+      "stem": "Cleanroom Fab Director at NanoLitho Technologies: \"Deploying extreme ultraviolet lithography scanner will enable our division to optimize photoresist etching within twelve months. Therefore, the executive steering committee must approve our funding request without delay.\"\n\nWhich of the following is an unstated assumption upon which the cleanroom fab director's argument depends?",
+      "options": [
+        "The policy will not inadvertently trigger cybersecurity container bottlenecks that cancels out the expected gains.",
+        "The capital allocation required is strictly less than any expenditure approved in the prior fiscal year.",
+        "No neighboring jurisdictions have considered implementing similar regulatory policies.",
+        "The personnel tasked with enforcing the policy have completed postgraduate compliance degrees.",
+        "Public opinion surveys indicate universal consumer enthusiasm for the initiative."
+      ],
+      "answer": "A",
+      "explanation": "Negation test: If the policy DOES trigger cybersecurity container bottlenecks that cancels out the expected gains, the goal of vessel turnaround dwell times will fail, collapsing the argument.",
+      "trap": "Focusing on administrative trivia (degree qualifications) or budget comparisons.",
+      "estSeconds": 115
+    },
+    {
+      "id": "pt05_v13",
+      "test": 5,
+      "section": "VERBAL",
+      "type": "CRITICAL_REASONING",
+      "subtopic": "Critical Reasoning",
+      "difficulty": "hard",
+      "difficultyScore": 8,
+      "stem": "Operations Analyst at NanoLitho Technologies: \"A three-month pilot deployment of extreme ultraviolet lithography scanner in region Alpha yielded a 25% improvement in photoresist etching. This empirical result establishes that extreme ultraviolet lithography scanner was the direct causal driver of the observed efficiency gain.\"\n\nWhich of the following, if true, most seriously undermines the analyst's causal conclusion?",
+      "options": [
+        "Test district Alpha simultaneously experienced a major external demographic shift that naturally produces high baseline performance.",
+        "The software utilized to compile test results was upgraded three weeks prior to the pilot rollout.",
+        "Several junior employees in district Alpha reported working five additional overtime hours during the pilot.",
+        "The cost of the pilot study was covered by a philanthropic research grant rather than operating revenue.",
+        "Competing firms in the same industry have not yet published their quarterly operational statistics."
+      ],
+      "answer": "A",
+      "explanation": "Introducing an external confounding variable (simultaneous demographic shift) directly attacks the causal attribution made by the consultant.",
+      "trap": "Pointing out that the pilot was grant-funded, which affects replication finances but not the validity of the pilot's causal data.",
+      "estSeconds": 110
+    },
+    {
+      "id": "pt05_v14",
+      "test": 5,
+      "section": "VERBAL",
+      "type": "CRITICAL_REASONING",
+      "subtopic": "Critical Reasoning",
+      "difficulty": "medium",
+      "difficultyScore": 7,
+      "stem": "Strategy Director at NanoLitho Technologies: \"Allocating capital toward extreme ultraviolet lithography scanner represents the most effective strategic pathway for our firm to expand photoresist etching.\"\n\nWhich of the following, if true, provides the strongest corroborating evidence for the director's assertion?",
+      "options": [
+        "In extensive blind controlled trials across diverse industry segments, organizations adopting Automated Gantry Cranes consistently outperformed control groups on vessel turnaround dwell times.",
+        "The strategic planner recently completed an executive leadership certification at an accredited business school.",
+        "The vendor supplying the hardware for the policy offers a 30-day money-back guarantee.",
+        "Several trade journals recently featured editorial articles discussing emerging regulatory trends.",
+        "The policy requires no alterations to the firm's existing corporate legal structure."
+      ],
+      "answer": "A",
+      "explanation": "Independent controlled trials demonstrating that the policy consistently beats control groups across diverse segments provides robust causal validation.",
+      "trap": "Relying on the planner's credentials (ad hominem support) rather than empirical evidence.",
+      "estSeconds": 100
+    },
+    {
+      "id": "pt05_v15",
+      "test": 5,
+      "section": "VERBAL",
+      "type": "CRITICAL_REASONING",
+      "subtopic": "Critical Reasoning",
+      "difficulty": "hard",
+      "difficultyScore": 9,
+      "stem": "Compliance Auditor: At NanoLitho Technologies, any initiative involving extreme ultraviolet lithography scanner requires formal sign-off from Cleanroom Fab Director. All initiatives receiving formal sign-off must undergo an environmental impact assessment unless they are classified as purely digital infrastructure. Last month, Initiative Sigma at NanoLitho Technologies received formal sign-off but did not undergo an environmental impact assessment.\n\nIf the statements above are true, which of the following must also be true regarding Initiative Sigma?",
+      "options": [
+        "The first describes an impending regulatory proposal; the second introduces evidence that undermines an objection to that proposal.",
+        "The first is the main conclusion of the argument; the second is a premise offered in support of that conclusion.",
+        "The first is an assumption underlying the industry objection; the second is the analyst\u2019s primary thesis.",
+        "The first provides empirical evidence; the second states an intermediate conclusion rejected by the author.",
+        "The first introduces a claim the author accepts; the second defends a counter-argument."
+      ],
+      "answer": "A",
+      "explanation": "Boldface 1 describes the regulatory initiative being debated. Boldface 2 presents empirical compliance cost data that directly counters the lobbyists' objection.",
+      "trap": "Confusing Boldface 1 with the author's personal conclusion (which appears in the final sentence).",
+      "estSeconds": 125
+    },
+    {
+      "id": "pt05_v16",
+      "test": 5,
+      "section": "VERBAL",
+      "type": "CRITICAL_REASONING",
+      "subtopic": "Critical Reasoning",
+      "difficulty": "hard",
+      "difficultyScore": 8,
+      "stem": "Lithography Engineering Lead: To reduce photoresist line-edge roughness on microprocessors, the cleanroom proposes lowering scanner laser pulse duration by 20%. Which of the following determinations would be most useful?",
+      "options": [
+        "Whether the monetary benefits realized from vessel turnaround dwell times exceed the ongoing compliance and operational costs associated with Automated Gantry Cranes.",
+        "Whether participating organizations display corporate logos on public transit shelters.",
+        "How many years the auditor has worked in the regional auditing bureau.",
+        "Whether similar policies were debated by legislative committees during the prior decade.",
+        "Whether employee satisfaction surveys are conducted semi-annually or annually."
+      ],
+      "answer": "A",
+      "explanation": "Net return on capital is defined as Net Financial Benefits minus Total Costs. Determining whether revenue gains exceed operational costs is decisive.",
+      "trap": "Choosing historical trivia or auditor tenure, which do not influence the mathematical financial return.",
+      "estSeconds": 110
+    },
+    {
+      "id": "pt05_v17",
+      "test": 5,
+      "section": "VERBAL",
+      "type": "CRITICAL_REASONING",
+      "subtopic": "Critical Reasoning",
+      "difficulty": "medium",
+      "difficultyScore": 7,
+      "stem": "Industrial Economist: Traditional accounts attribute early Silicon Valley supremacy to university research defense grants. **Patent filings indicate that spin-off venture capital consortia commercialized twice as many integrated circuit designs as universities.** Defense theorists claim venture funds merely copied military prototypes. Yet corporate ledgers prove private firms funded initial prototyping; **independent venture capital syndication was the indispensable engine of semiconductor growth.** What roles do the boldface portions play?",
+      "options": [
+        "Rapid organic growth in commercial activity created new baseline volume that would have severely degraded performance in the absence of the subsidies.",
+        "The currency in which subsidies were disbursed remained stable on international currency exchange markets.",
+        "Several administrative assistants retired during the middle of the fiscal quarter.",
+        "The auditing agency used computerized spreadsheets rather than handwritten paper ledgers.",
+        "The subsidies were announced during a nationally televised press conference."
+      ],
+      "answer": "A",
+      "explanation": "A powerful counteracting upward pressure (organic commercial growth) would have caused a steep deterioration; the policy succeeded in keeping metrics flat against a worsening baseline.",
+      "trap": "Focusing on accounting ledger format (option D), which explains no operational dynamics.",
+      "estSeconds": 105
+    },
+    {
+      "id": "pt05_v18",
+      "test": 5,
+      "section": "VERBAL",
+      "type": "CRITICAL_REASONING",
+      "subtopic": "Critical Reasoning",
+      "difficulty": "hard",
+      "difficultyScore": 8,
+      "stem": "Safety Officer at NanoLitho Technologies: Over the past three quarters, NanoLitho Technologies equipped 90% of all extreme ultraviolet lithography scanner units with automated proximity sensors. Yet despite this safety upgrade, reported workplace minor incident rates in semiconductor euv nanotechnology increased by 14% over the same timeframe.\n\nWhich of the following, if true, most helps to resolve the apparent discrepancy described above?",
+      "options": [
+        "Mistakes a necessary condition for a sufficient condition.",
+        "Attacks the personal moral character of corporate executives.",
+        "Relies on circular logic by defining performance as adoption of the policy.",
+        "Fails to specify the exact percentage return of the market index.",
+        "Assumes that corporate profitability is the sole measure of human happiness."
+      ],
+      "answer": "A",
+      "explanation": "The premise shows that adopting the policy may be necessary to avoid failure, but that does not mean adoption is sufficient to guarantee market outperformance.",
+      "trap": "Selecting option C (circular logic) when the formal flaw is affirming the consequent / confusing necessary and sufficient conditions.",
+      "estSeconds": 115
+    },
+    {
+      "id": "pt05_v19",
+      "test": 5,
+      "section": "VERBAL",
+      "type": "CRITICAL_REASONING",
+      "subtopic": "Critical Reasoning",
+      "difficulty": "hard",
+      "difficultyScore": 8,
+      "stem": "Foundry Operations Lead: Every chip designer who rated our lithography fab 'outstanding' taped out at least three semiconductor projects last year. Designers taping out fewer projects gave lower ratings. Therefore, to improve customer satisfaction ratings, we should offer tape-out discounts. The lead's reasoning is vulnerable because it:",
+      "options": [
+        "Some facilities in Province 5 are NOT tier-1 manufacturing facilities.",
+        "All facilities in Province 5 maintain ISO-14001 certification.",
+        "No tier-1 manufacturing facility is located in Province 5.",
+        "Every facility that lacks ISO-14001 certification operates uncalibrated combustion chambers.",
+        "Province 5 has the highest industrial energy consumption in the nation."
+      ],
+      "answer": "A",
+      "explanation": "There exist facilities in Province X with uncalibrated chambers. None of these can have ISO-14001 certification (by statement 2). Since all tier-1 facilities must have ISO-14001 certification, these uncertified facilities in Province X cannot be tier-1 facilities.",
+      "trap": "Concluding that NO tier-1 facilities exist in Province X (option C), which oversteps the premises.",
+      "estSeconds": 110
+    },
+    {
+      "id": "pt05_v20",
+      "test": 5,
+      "section": "VERBAL",
+      "type": "CRITICAL_REASONING",
+      "subtopic": "Critical Reasoning",
+      "difficulty": "hard",
+      "difficultyScore": 8,
+      "stem": "Semiconductor Fab VP: Our foundry plans to install extreme ultraviolet pellicles to shield photomasks from sub-micron particle contamination. Critics argue pellicles reduce EUV transmission efficiency. However, new carbon-nanotube membranes achieve 92% transmission. Which of the following provides the strongest support?",
+      "options": [
+        "Concurrently with the predator removal, the reserve experienced a massive cyclical emergence of nutrient-rich prey that provided unprecedented food abundance.",
+        "Target species construct nests in deciduous trees as well as evergreen shrubs.",
+        "Invasive predators were introduced to the continent by European settlers in the eighteenth century.",
+        "Volunteers conducted population counts using standard 10x binoculars.",
+        "Several nearby urban parks also have small populations of the same species."
+      ],
+      "answer": "A",
+      "explanation": "The simultaneous explosion of nutrient-rich cicada prey provides an overwhelming alternative causal explanation for the surge in reproduction.",
+      "trap": "Noting the historical origins of predators, which is irrelevant to current breeding dynamics.",
+      "estSeconds": 115
+    },
+    {
+      "id": "pt05_v21",
+      "test": 5,
+      "section": "VERBAL",
+      "type": "CRITICAL_REASONING",
+      "subtopic": "Critical Reasoning",
+      "difficulty": "medium",
+      "difficultyScore": 7,
+      "stem": "Fab Quality VP: Last quarter, our engineering team doubled defect inspection passes on silicon wafer lot Alpha, and defective die yields dropped by 30%. This demonstrates that doubling defect inspections should be mandated for all production lots. Which of the following most seriously calls into question the VP's recommendation?",
+      "options": [
+        "The patient case mix and medical complexity in Ward 5 are representative of clinical departments across the entire hospital system.",
+        "The platform software runs on standard desktop workstations running Windows 11.",
+        "Physicians in Ward 5 completed an online feedback survey regarding user satisfaction.",
+        "The hospital's malpractice insurance premium is reviewed annually in November.",
+        "Medical transcriptionists previously belonged to a regional healthcare labor union."
+      ],
+      "answer": "A",
+      "explanation": "Confirming that the test clinic is representative demonstrates that the 40% error reduction will likely replicate across other hospital departments.",
+      "trap": "Citing IT workstation compatibility (option B), which is convenient but does not prove clinical effectiveness.",
+      "estSeconds": 100
+    },
+    {
+      "id": "pt05_v22",
+      "test": 5,
+      "section": "VERBAL",
+      "type": "CRITICAL_REASONING",
+      "subtopic": "Critical Reasoning",
+      "difficulty": "hard",
+      "difficultyScore": 9,
+      "stem": "Desert Ecosystem Biologist: To protect endangered desert pupfish inhabiting artesian springs near a new semiconductor plant, rangers installed exclusionary mesh barriers to prevent non-native crayfish predation. Biologists project pupfish density will recover. Which of the following is a required assumption?",
+      "options": [
+        "The public subway system possesses sufficient train capacity to accommodate the surge of diverted commuters without causing severe overcrowding that deters ridership.",
+        "All private automobile drivers earn incomes above the national median household threshold.",
+        "City parking meters generate less revenue than public transit fareboxes.",
+        "Bicycle sharing programs will experience a corresponding increase in ridership.",
+        "Municipal road paving projects are financed through state gasoline excise taxes."
+      ],
+      "answer": "A",
+      "explanation": "Negation test: If the subway lacks capacity and overcrowding becomes unmanageable, drivers will not switch to transit (they may carpool, detour, or telecommute), defeating the policy.",
+      "trap": "Assuming all drivers have high incomes (option B), which is not logically required.",
+      "estSeconds": 120
+    },
+    {
+      "id": "pt05_v23",
+      "test": 5,
+      "section": "VERBAL",
+      "type": "CRITICAL_REASONING",
+      "subtopic": "Critical Reasoning",
+      "difficulty": "hard",
+      "difficultyScore": 9,
+      "stem": "Semiconductor Analyst: Industry observers often argue that chip fab Alpha achieved market leadership solely through government equipment subsidies. **However, competing foundries that received identical government subsidies suffered chronic yield losses and financial ruin.** Clearly, subsidies were not the primary catalyst. Rather, **fab Alpha's proprietary extreme ultraviolet pellicle design and defect inspection algorithms achieved die yields that competitors could not approach.** What roles do the boldface portions play?",
+      "options": [
+        "The first is an established claim that the argument aims to refute; the second is an observation that supports the author\u2019s alternative conclusion.",
+        "The first is the main conclusion of the argument; the second is a premise offered to defend that conclusion.",
+        "The first provides empirical evidence; the second states an intermediate hypothesis rejected by the author.",
+        "The first is a prediction; the second is an observation that disproves that prediction.",
+        "The first introduces a hypothesis; the second proves that coal adoption never occurred."
+      ],
+      "answer": "A",
+      "explanation": "Boldface 1 presents the conventional orthodoxy that the author sets out to undermine. Boldface 2 describes the persistent water-power cost advantage that supports the author's alternative thesis.",
+      "trap": "Selecting option B which confuses the introductory conventional view with the author's own main conclusion.",
+      "estSeconds": 120
+    },
+    {
+      "id": "pt05_di01",
+      "test": 5,
+      "section": "DATA_INSIGHTS",
+      "type": "DATA_SUFFICIENCY",
+      "subtopic": "Data Sufficiency",
+      "difficulty": "medium",
+      "difficultyScore": 7,
+      "stem": "In a data transmission pipeline for semiconductor microfabrication & nanotech, if $k$ is a positive integer, is $k$ divisible by 6?\n\n(1) $k$ is divisible by 3 and $k$ is even.\n(2) $k^2$ is divisible by 36.",
+      "options": [
+        "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+        "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+        "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+        "EACH statement ALONE is sufficient.",
+        "Statements (1) and (2) TOGETHER are NOT sufficient."
+      ],
+      "answer": "D",
+      "explanation": "Statement (1): Since $k$ is even (divisible by 2) and divisible by 3, and $\\text{LCM}(2, 3) = 6$, $k$ must be divisible by 6. Sufficient.\nStatement (2): If $k^2$ is divisible by 36, then for positive integer $k$, $\\sqrt{k^2} = k$ is divisible by 6. Sufficient.\nTherefore, EACH statement ALONE is sufficient.",
+      "trap": "Believing statement (2) allows fractional roots when $k$ is explicitly constrained to be an integer.",
+      "estSeconds": 95
+    },
+    {
+      "id": "pt05_di02",
+      "test": 5,
+      "section": "DATA_INSIGHTS",
+      "type": "DATA_SUFFICIENCY",
+      "subtopic": "Data Sufficiency",
+      "difficulty": "hard",
+      "difficultyScore": 8,
+      "stem": "If $a$ and $b$ are non-zero real parameters measuring photoresist etching at NanoLitho Technologies, is $\\frac{a}{b} > 1$?\n\n(1) $a > b$\n(2) $a b > 0$",
+      "options": [
+        "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+        "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+        "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+        "EACH statement ALONE is sufficient.",
+        "Statements (1) and (2) TOGETHER are NOT sufficient."
+      ],
+      "answer": "E",
+      "explanation": "Statement (1): If $x = 2, y = 1$, $x/y = 2 > 1$. If $x = -1, y = -2$, $x > y$ holds but $x/y = 1/2 < 1$. Insufficient.\nStatement (2): Tells us $x$ and $y$ have the same sign, but gives no relative magnitude. Insufficient.\nTogether: If $x=2, y=1$, $x/y=2 > 1$. If $x=-1, y=-2$, $x>y$ and $xy=2>0$ hold, but $x/y=0.5 < 1$. Two contradictory answers remain possible. Statements (1) and (2) together are NOT sufficient (Answer E).",
+      "trap": "Assuming $x$ and $y$ must be positive without testing negative numbers.",
+      "estSeconds": 110
+    },
+    {
+      "id": "pt05_di03",
+      "test": 5,
+      "section": "DATA_INSIGHTS",
+      "type": "DATA_SUFFICIENCY",
+      "subtopic": "Data Sufficiency",
+      "difficulty": "medium",
+      "difficultyScore": 7,
+      "stem": "Working at constant rates, how many hours does it take for Module A and Module B in semiconductor microfabrication & nanotech working together to process 5000 data transactions?\n\n(1) Module A processes 2000 transactions in 2 hours.\n(2) Operating simultaneously, Module A and Module B process 2500 transactions in 2.5 hours.",
+      "options": [
+        "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+        "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+        "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+        "EACH statement ALONE is sufficient.",
+        "Statements (1) and (2) TOGETHER are NOT sufficient."
+      ],
+      "answer": "B",
+      "explanation": "Statement (1) provides only the rate for Module A. Insufficient.\nStatement (2) provides the combined throughput rate directly: Rate $= \\text{Transactions} / \\text{Time}$. With the combined rate known, the time to complete the target volume is uniquely determined. Sufficient.",
+      "trap": "Believing individual rates for both modules are required.",
+      "estSeconds": 90
+    },
+    {
+      "id": "pt05_di04",
+      "test": 5,
+      "section": "DATA_INSIGHTS",
+      "type": "DATA_SUFFICIENCY",
+      "subtopic": "Data Sufficiency",
+      "difficulty": "hard",
+      "difficultyScore": 8,
+      "stem": "In a sample $S$ of 5 distinct integers recorded during semiconductor microfabrication & nanotech testing, is the mean of $S$ greater than the median of $S$?\n\n(1) The 3 smallest integers are 1, 3, and 6.\n(2) The largest integer in $S$ is 55.",
+      "options": [
+        "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+        "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+        "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+        "EACH statement ALONE is sufficient.",
+        "Statements (1) and (2) TOGETHER are NOT sufficient."
+      ],
+      "answer": "C",
+      "explanation": "Statement (1): Median is 6. Upper values could be 7, 8 (mean = 5 < 6) or 7, 50 (mean > 6). Insufficient.\nStatement (2): Gives no information about median or lower values. Insufficient.\nTogether: Elements are $1, 3, 6, d, {35 + test_idx * 5}$ where $6 < d < {35 + test_idx * 5}$. Minimum sum is $1 + 3 + 6 + 7 + {35 + test_idx * 5} = {52 + test_idx * 5}$. Minimum mean is $({52 + test_idx * 5})/5 > 10 > 6$. Since the minimum possible mean is strictly greater than the median 6, the answer is always YES. Sufficient.",
+      "trap": "Neglecting to calculate the minimum possible mean under the constraint $d \\ge 7$.",
+      "estSeconds: 115": 115,
+      "estSeconds": 115
+    },
+    {
+      "id": "pt05_di05",
+      "test": 5,
+      "section": "DATA_INSIGHTS",
+      "type": "DATA_SUFFICIENCY",
+      "subtopic": "Data Sufficiency",
+      "difficulty": "medium",
+      "difficultyScore": 6,
+      "stem": "Did NanoLitho Technologies's division for semiconductor euv nanotechnology generate an operating net margin of at least $\\$40,000$ on total contract billings of $\\$225,000$?\n\n(1) Total operating expenses were strictly under 65% of contract billings.\n(2) Operating margin exceeded 20% of contract billings.",
+      "options": [
+        "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+        "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+        "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+        "EACH statement ALONE is sufficient.",
+        "Statements (1) and (2) TOGETHER are NOT sufficient."
+      ],
+      "answer": "A",
+      "explanation": "Profit = Revenue - Costs. Statement (1): If costs < 65% of revenue, profit > 35% of revenue. 35% of $\\$210,000$ is at least $\\$73,500$, which is strictly greater than $\\$40,000$. Sufficient.\nStatement (2): 20% of $\\$210,000$ is $\\$42,000$. For smaller revenues, 20% might be $\\$30,000$ or $\\$36,000$ (which could allow profit to be $\\$38,000 < \\$40,000$). Thus Statement (2) is not guaranteed sufficient across baseline tests. Statement (1) ALONE is sufficient.",
+      "trap": "Assuming statement (2) guarantees clearing $\\$40,000$ without calculating the 20% threshold.",
+      "estSeconds": 95
+    },
+    {
+      "id": "pt05_di06",
+      "test": 5,
+      "section": "DATA_INSIGHTS",
+      "type": "DATA_SUFFICIENCY",
+      "subtopic": "Data Sufficiency",
+      "difficulty": "hard",
+      "difficultyScore": 9,
+      "stem": "If parameter $p$ is an integer recorded during silicon wafer photoresist etching on extreme ultraviolet lithography scanner at NanoLitho Technologies, is $|p| = p$?\n\n(1) $p^2 = p$\n(2) $p^3 \\ge p$",
+      "options": [
+        "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+        "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+        "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+        "EACH statement ALONE is sufficient.",
+        "Statements (1) and (2) TOGETHER are NOT sufficient."
+      ],
+      "answer": "A",
+      "explanation": "$|m| = m$ holds if and only if $m \\ge 0$.\nStatement (1): $m(m - 1) = 0 \\implies m = 0$ or $m = 1$. In both cases, $m \\ge 0$, so $|m| = m$ is definitely true. Sufficient.\nStatement (2): $m^3 - m \\ge 0 \\implies m(m-1)(m+1) \\ge 0$. Integer solutions include $m = -1$ (where $|-1| = 1 \\ne -1$, so NO) as well as $m = 0, 1, 2$ (where YES). Insufficient.\nTherefore, Statement (1) ALONE is sufficient.",
+      "trap": "Overlooking $m = -1$ as a valid integer solution to $m^3 \\ge m$.",
+      "estSeconds": 105
+    },
+    {
+      "id": "pt05_di07",
+      "test": 5,
+      "section": "DATA_INSIGHTS",
+      "type": "TABLE_ANALYSIS",
+      "subtopic": "Table Analysis",
+      "difficulty": "medium",
+      "difficultyScore": 7,
+      "stem": "According to the semiconductor foundry table, which wafer manufacturing unit produced the highest dollar operating profit?",
+      "dataSource": {
+        "title": "Performance Matrix: 6 Operational Units in Semiconductor Microfabrication & Nanotech",
+        "headers": [
+          "Unit Identifier",
+          "Throughput (k/day)",
+          "Error Rate (%)",
+          "Uptime (%)",
+          "Cost Index"
+        ],
+        "rows": [
+          [
+            "Unit Alpha-5",
+            57,
+            0.4,
+            99.8,
+            110
+          ],
+          [
+            "Unit Beta-5",
+            78,
+            1.2,
+            98.4,
+            145
+          ],
+          [
+            "Unit Gamma-5",
+            46,
+            0.2,
+            99.9,
+            85
+          ],
+          [
+            "Unit Delta-5",
+            95,
+            2.1,
+            97.5,
+            180
+          ],
+          [
+            "Unit Epsilon-5",
+            66,
+            0.8,
+            99.1,
+            125
+          ],
+          [
+            "Unit Zeta-5",
+            60,
+            0.6,
+            99.4,
+            115
+          ]
+        ]
+      },
+      "options": [
+        "Statement 1: The median throughput among units with an Error Rate strictly under 1.0% exceeds 45 k/day. (Yes/No)",
+        "Statement 2: The unit with the highest Cost Index also has the highest Error Rate. (Yes/No)",
+        "Statement 3: All units with Uptime greater than 99.0% have a Cost Index below 150. (Yes/No)"
+      ],
+      "answer": "Yes | Yes | Yes",
+      "explanation": "Statement 1: Units with error < 1.0% are Alpha, Gamma, Epsilon, Zeta. Throughputs are 45+, 38+, 54+, 48+. Median is (45+48)/2 > 45 k/day -> Yes.\nStatement 2: Unit Delta has Cost Index 180 (highest) and Error Rate 2.1% (highest) -> Yes.\nStatement 3: Units with Uptime > 99.0% are Alpha (110), Gamma (85), Epsilon (125), Zeta (115), all under 150 -> Yes.",
+      "trap": "Sorting by the wrong column or taking the mean instead of the median.",
+      "estSeconds": 120
+    },
+    {
+      "id": "pt05_di08",
+      "test": 5,
+      "section": "DATA_INSIGHTS",
+      "type": "TABLE_ANALYSIS",
+      "subtopic": "Table Analysis",
+      "difficulty": "medium",
+      "difficultyScore": 7,
+      "stem": "Evaluate operational ranking correlations based on the semiconductor microfabrication & nanotech table.",
+      "dataSource": {
+        "title": "Performance Matrix: 6 Operational Units in Semiconductor Microfabrication & Nanotech",
+        "headers": [
+          "Unit Identifier",
+          "Throughput (k/day)",
+          "Error Rate (%)",
+          "Uptime (%)",
+          "Cost Index"
+        ],
+        "rows": [
+          [
+            "Unit Alpha-5",
+            57,
+            0.4,
+            99.8,
+            110
+          ],
+          [
+            "Unit Beta-5",
+            78,
+            1.2,
+            98.4,
+            145
+          ],
+          [
+            "Unit Gamma-5",
+            46,
+            0.2,
+            99.9,
+            85
+          ],
+          [
+            "Unit Delta-5",
+            95,
+            2.1,
+            97.5,
+            180
+          ],
+          [
+            "Unit Epsilon-5",
+            66,
+            0.8,
+            99.1,
+            125
+          ],
+          [
+            "Unit Zeta-5",
+            60,
+            0.6,
+            99.4,
+            115
+          ]
+        ]
+      },
+      "options": [
+        "Statement 1: Sorting descending by Throughput yields an identical ranking as sorting descending by Cost Index. (Yes/No)",
+        "Statement 2: Exactly three units have an Error Rate strictly below 0.7%. (Yes/No)",
+        "Statement 3: Unit Gamma has both the lowest Throughput and the lowest Error Rate. (Yes/No)"
+      ],
+      "answer": "No | Yes | Yes",
+      "explanation": "Statement 1: Delta is highest in both, but Beta (62, 145) vs Epsilon (54, 125) vs Alpha (45, 110) vs Zeta (48, 115) - Zeta throughput is higher than Alpha but Cost Index is 115 vs 110, order varies -> No.\nStatement 2: Units with error < 0.7% are Alpha (0.4), Gamma (0.2), Zeta (0.6) -> exactly three -> Yes.\nStatement 3: Gamma has lowest throughput (38+) and lowest error (0.2%) -> Yes.",
+      "trap": "Assuming throughput and cost index correlate with 1.0 rank correlation.",
+      "estSeconds": 115
+    },
+    {
+      "id": "pt05_di09",
+      "test": 5,
+      "section": "DATA_INSIGHTS",
+      "type": "TABLE_ANALYSIS",
+      "subtopic": "Table Analysis",
+      "difficulty": "hard",
+      "difficultyScore": 8,
+      "stem": "If the semiconductor fabrication table is ordered in ascending sequence by Operating Margin (%), which fab occupies the median position?",
+      "dataSource": {
+        "title": "Performance Matrix: 6 Operational Units in Semiconductor Microfabrication & Nanotech",
+        "headers": [
+          "Unit Identifier",
+          "Throughput (k/day)",
+          "Error Rate (%)",
+          "Uptime (%)",
+          "Cost Index"
+        ],
+        "rows": [
+          [
+            "Unit Alpha-5",
+            57,
+            0.4,
+            99.8,
+            110
+          ],
+          [
+            "Unit Beta-5",
+            78,
+            1.2,
+            98.4,
+            145
+          ],
+          [
+            "Unit Gamma-5",
+            46,
+            0.2,
+            99.9,
+            85
+          ],
+          [
+            "Unit Delta-5",
+            95,
+            2.1,
+            97.5,
+            180
+          ],
+          [
+            "Unit Epsilon-5",
+            66,
+            0.8,
+            99.1,
+            125
+          ],
+          [
+            "Unit Zeta-5",
+            60,
+            0.6,
+            99.4,
+            115
+          ]
+        ]
+      },
+      "options": [
+        "Statement 1: Unit Gamma has a Cost Index per throughput unit of less than 2.5. (Yes/No)",
+        "Statement 2: The range of Error Rates across all 6 units is strictly greater than 1.8 percentage points. (Yes/No)",
+        "Statement 3: More than half of the units have an Uptime exceeding 99.2%. (Yes/No)"
+      ],
+      "answer": "Yes | Yes | No",
+      "explanation": "Statement 1: Gamma ratio = 85 / (38+) < 2.5 -> Yes.\nStatement 2: Max error = Delta (2.1%), Min error = Gamma (0.2%). Range = 2.1 - 0.2 = 1.9% > 1.8% -> Yes.\nStatement 3: Units with Uptime > 99.2% are Alpha (99.8), Gamma (99.9), Zeta (99.4) -> 3 out of 6 (wait: exactly half, so strictly more than half is No!) -> Answer: Yes | Yes | No.",
+      "trap": "Confusing 'at least half' with 'strictly more than half'.",
+      "estSeconds": 125
+    },
+    {
+      "id": "pt05_di10",
+      "test": 5,
+      "section": "DATA_INSIGHTS",
+      "type": "TABLE_ANALYSIS",
+      "subtopic": "Table Analysis",
+      "difficulty": "hard",
+      "difficultyScore": 8,
+      "stem": "Evaluate reliability and risk profiles across units in semiconductor microfabrication & nanotech.",
+      "dataSource": {
+        "title": "Performance Matrix: 6 Operational Units in Semiconductor Microfabrication & Nanotech",
+        "headers": [
+          "Unit Identifier",
+          "Throughput (k/day)",
+          "Error Rate (%)",
+          "Uptime (%)",
+          "Cost Index"
+        ],
+        "rows": [
+          [
+            "Unit Alpha-5",
+            57,
+            0.4,
+            99.8,
+            110
+          ],
+          [
+            "Unit Beta-5",
+            78,
+            1.2,
+            98.4,
+            145
+          ],
+          [
+            "Unit Gamma-5",
+            46,
+            0.2,
+            99.9,
+            85
+          ],
+          [
+            "Unit Delta-5",
+            95,
+            2.1,
+            97.5,
+            180
+          ],
+          [
+            "Unit Epsilon-5",
+            66,
+            0.8,
+            99.1,
+            125
+          ],
+          [
+            "Unit Zeta-5",
+            60,
+            0.6,
+            99.4,
+            115
+          ]
+        ]
+      },
+      "options": [
+        "Statement 1: The unit with the highest Throughput also has the lowest Uptime. (Yes/No)",
+        "Statement 2: Total combined throughput of the two highest units exceeds 130 k/day. (Yes/No)",
+        "Statement 3: Every unit with a Cost Index greater than 120 has an Error Rate above 1.0%. (Yes/No)"
+      ],
+      "answer": "Yes | Yes | No",
+      "explanation": "Statement 1: Delta has highest throughput (75+) and lowest uptime (97.5%) -> Yes.\nStatement 2: Top two are Delta (75+) and Beta (62+) = 137+ > 130 -> Yes.\nStatement 3: Unit Epsilon has Cost Index 125 (>120) but Error Rate 0.8% (< 1.0%) -> No.",
+      "trap": "Overlooking Unit Epsilon's low error rate despite high cost.",
+      "estSeconds": 115
+    },
+    {
+      "id": "pt05_di11",
+      "test": 5,
+      "section": "DATA_INSIGHTS",
+      "type": "GRAPHICS_INTERPRETATION",
+      "subtopic": "Graphics Interpretation",
+      "difficulty": "medium",
+      "difficultyScore": 7,
+      "stem": "On the semiconductor EUV scatter plot correlating lithography R&D with foundry ROIC, as R&D increases up to 11%, capital return generally [Select 1], whereas beyond 11%, it generally [Select 2].",
+      "dataSource": {
+        "title": "Efficiency Curve: Resource Investment vs Productivity Output in Semiconductor Microfabrication & Nanotech",
+        "type": "scatter_trend",
+        "points": [
+          {
+            "x": 10,
+            "y": 28
+          },
+          {
+            "x": 20,
+            "y": 43
+          },
+          {
+            "x": 30,
+            "y": 56
+          },
+          {
+            "x": 40,
+            "y": 66
+          },
+          {
+            "x": 50,
+            "y": 73
+          },
+          {
+            "x": 60,
+            "y": 78
+          }
+        ]
+      },
+      "options": [
+        "Dropdown 1: The overall relationship between Resource Investment and Productivity Output is [strongly positive | strongly negative | sinusoidal | uncorrelated].",
+        "Dropdown 2: As Resource Investment increases beyond $40k, the rate of increase in Productivity Output displays [diminishing marginal returns | increasing exponential growth | negative acceleration | zero slope]."
+      ],
+      "answer": "strongly positive | diminishing marginal returns",
+      "explanation": "Dropdown 1: As investment rises from 10 to 60, output rises consistently from 20+ to 70+ -> strongly positive.\nDropdown 2: Between 10 and 30, slope is ~1.4; between 40 and 60, slope drops to ~0.6 -> diminishing marginal returns.",
+      "trap": "Confusing diminishing marginal growth with an absolute decline in output.",
+      "estSeconds": 105
+    },
+    {
+      "id": "pt05_di12",
+      "test": 5,
+      "section": "DATA_INSIGHTS",
+      "type": "GRAPHICS_INTERPRETATION",
+      "subtopic": "Graphics Interpretation",
+      "difficulty": "medium",
+      "difficultyScore": 7,
+      "stem": "On the semiconductor foundry chart, approximately what fraction of chip manufacturing fabs with R&D intensity under 6% attained an ROIC exceeding 20%?",
+      "dataSource": {
+        "title": "Efficiency Curve: Resource Investment vs Productivity Output in Semiconductor Microfabrication & Nanotech",
+        "type": "scatter_trend",
+        "points": [
+          {
+            "x": 10,
+            "y": 28
+          },
+          {
+            "x": 20,
+            "y": 43
+          },
+          {
+            "x": 30,
+            "y": 56
+          },
+          {
+            "x": 40,
+            "y": 66
+          },
+          {
+            "x": 50,
+            "y": 73
+          },
+          {
+            "x": 60,
+            "y": 78
+          }
+        ]
+      },
+      "options": [
+        "Dropdown 1: The average marginal gain in output per thousand dollars invested between $10k and $30k is approximately [1.4 points/$k | 2.5 points/$k | 3.5 points/$k | 0.5 points/$k].",
+        "Dropdown 2: The point with the highest output-to-investment ratio is at an investment of [$10k | $30k | $50k | $60k]."
+      ],
+      "answer": "1.4 points/$k | $10k",
+      "explanation": "Dropdown 1: Slope = (48 - 20) / (30 - 10) = 28 / 20 = 1.4 points/$k.\nDropdown 2: Ratio y/x: At x=10, y/x = 22/10 = 2.2. At x=60, y/x = 72/60 = 1.2. The highest ratio occurs at the earliest stage ($10k).",
+      "trap": "Assuming the highest absolute output point ($60k) has the highest efficiency ratio.",
+      "estSeconds": 115
+    },
+    {
+      "id": "pt05_di13",
+      "test": 5,
+      "section": "DATA_INSIGHTS",
+      "type": "GRAPHICS_INTERPRETATION",
+      "subtopic": "Graphics Interpretation",
+      "difficulty": "hard",
+      "difficultyScore": 8,
+      "stem": "On the semiconductor fabrication chart, the single microchip foundry identified as the largest positive statistical outlier is characterized by which coordinates?",
+      "dataSource": {
+        "title": "Efficiency Curve: Resource Investment vs Productivity Output in Semiconductor Microfabrication & Nanotech",
+        "type": "scatter_trend",
+        "points": [
+          {
+            "x": 10,
+            "y": 28
+          },
+          {
+            "x": 20,
+            "y": 43
+          },
+          {
+            "x": 30,
+            "y": 56
+          },
+          {
+            "x": 40,
+            "y": 66
+          },
+          {
+            "x": 50,
+            "y": 73
+          },
+          {
+            "x": 60,
+            "y": 78
+          }
+        ]
+      },
+      "options": [
+        "Dropdown 1: The median investment level across the 6 observed data points is [$35k | $40k | $45k | $50k].",
+        "Dropdown 2: A firm investing $45k would be projected by linear interpolation to produce an output index of approximately [61.5 | 68.0 | 72.5 | 55.0]."
+      ],
+      "answer": "$35k | 61.5",
+      "explanation": "Dropdown 1: Ordered x: 10, 20, 30, 40, 50, 60. Median = (30 + 40)/2 = $35k.\nDropdown 2: Between x=40 (y~58) and x=50 (y~65), midpoint x=45 gives y = (58 + 65)/2 = 61.5.",
+      "trap": "Extrapolating using the steep slope from the early segment.",
+      "estSeconds": 110
+    },
+    {
+      "id": "pt05_di14",
+      "test": 5,
+      "section": "DATA_INSIGHTS",
+      "type": "GRAPHICS_INTERPRETATION",
+      "subtopic": "Graphics Interpretation",
+      "difficulty": "hard",
+      "difficultyScore": 8,
+      "stem": "If an operating facility at NanoLitho Technologies reduces its expenditure from 16% down to 10% along the regression curve for photoresist etching, what is the expected change in its performance index?",
+      "dataSource": {
+        "title": "Efficiency Curve: Resource Investment vs Productivity Output in Semiconductor Microfabrication & Nanotech",
+        "type": "scatter_trend",
+        "points": [
+          {
+            "x": 10,
+            "y": 28
+          },
+          {
+            "x": 20,
+            "y": 43
+          },
+          {
+            "x": 30,
+            "y": 56
+          },
+          {
+            "x": 40,
+            "y": 66
+          },
+          {
+            "x": 50,
+            "y": 73
+          },
+          {
+            "x": 60,
+            "y": 78
+          }
+        ]
+      },
+      "options": [
+        "Dropdown 1: Increasing investment from $50k to $60k yields a percentage increase in output of approximately [7% | 15% | 25% | 35%].",
+        "Dropdown 2: If fixed costs require an output index of at least 50 to break even, the minimum necessary investment is approximately [$32k | $22k | $42k | $15k]."
+      ],
+      "answer": "7% | $32k",
+      "explanation": "Dropdown 1: At x=50, y~67. At x=60, y~72. Change = 5 / 67 ~ 7.4%.\nDropdown 2: At x=30, y~48; at x=40, y~58. Output 50 is reached just past $30k (approx $32k).",
+      "trap": "Calculating percentage increase based on investment (20%) instead of output (7%).",
+      "estSeconds": 115
+    },
+    {
+      "id": "pt05_di15",
+      "test": 5,
+      "section": "DATA_INSIGHTS",
+      "type": "TWO_PART_ANALYSIS",
+      "subtopic": "Two-Part Analysis",
+      "difficulty": "hard",
+      "difficultyScore": 8,
+      "stem": "At NanoLitho Technologies, a capital allocation of $60 million is split between extreme ultraviolet lithography scanner (Asset X) and secondary infrastructure (Asset Y). The allocation to Asset X is exactly 5 times the allocation to Asset Y. Select the dollar allocation for Asset X and Asset Y.\n\nValues: Asset X = $50M, Asset Y = $10M.",
+      "options": [
+        "Grade A: 48 liters",
+        "Grade B: 24 liters"
+      ],
+      "answer": "Grade A = 48 | Grade B = 24",
+      "explanation": "Alligation: Ratio of Grade A to Grade B is $|50 - 30| : |30 - 20| = 20 : 10 = 2 : 1$. Total volume is 72 liters. Grade A $= 2/3 \\times 72 = 48$ liters, Grade B $= 1/3 \\times 72 = 24$ liters.",
+      "trap": "Reversing the 2:1 ratio between Grade A and Grade B.",
+      "estSeconds": 125
+    },
+    {
+      "id": "pt05_di16",
+      "test": 5,
+      "section": "DATA_INSIGHTS",
+      "type": "TWO_PART_ANALYSIS",
+      "subtopic": "Two-Part Analysis",
+      "difficulty": "hard",
+      "difficultyScore": 9,
+      "stem": "Two parameters $U$ and $V$ in semiconductor microfabrication & nanotech satisfy the linear system: $2U + 3V = 48$ and $U - V = 4$.\n\nSelect the value of $U$ and the value of $V$ that satisfy both equations.",
+      "options": [
+        "U: 12",
+        "V: 8"
+      ],
+      "answer": "U = 12 | V = 8",
+      "explanation": "Substitute $U = V + 4$: $2(V + 4) + 3V = 5V + 8 = 48 \\implies 5V = 40 \\implies V = 8$. Then $U = 8 + 4 = 12$.",
+      "trap": "Sign error when expanding 2(V + 4).",
+      "estSeconds: 105": 105,
+      "estSeconds": 105
+    },
+    {
+      "id": "pt05_di17",
+      "test": 5,
+      "section": "DATA_INSIGHTS",
+      "type": "TWO_PART_ANALYSIS",
+      "subtopic": "Two-Part Analysis",
+      "difficulty": "hard",
+      "difficultyScore": 9,
+      "stem": "At NanoLitho Technologies, Pump Alpha fills an emergency containment reservoir for silicon wafer photoresist etching in 11 hours working alone. Working together, Pump Alpha and Pump Beta fill the reservoir in 6.6 hours. Select the time for Pump Alpha and Pump Beta working alone.",
+      "options": [
+        "High-Yield Debt: \\$400,000",
+        "Treasury Notes: \\$600,000"
+      ],
+      "answer": "High-Yield = $400,000 | Treasury = $600,000",
+      "explanation": "Alligation: Ratio of High-Yield to Treasury is $|3 - 5| : |8 - 5| = 2 : 3$. Fraction in High-Yield is $2/5 = 40\\% = \\$400,000$. Fraction in Treasury is $3/5 = 60\\% = \\$600,000$.",
+      "trap": "Inverting the 2:3 ratio to 3:2.",
+      "estSeconds": 120
+    },
+    {
+      "id": "pt05_di18",
+      "test": 5,
+      "section": "DATA_INSIGHTS",
+      "type": "MULTI_SOURCE_REASONING",
+      "subtopic": "Multi-Source Reasoning",
+      "difficulty": "medium",
+      "difficultyScore": 7,
+      "stem": "Evaluating the Project Charter and Financial Audit tabs for NanoLitho Technologies, what is the total upfront capital investment required for deploying extreme ultraviolet lithography scanner across all branch facilities?",
+      "dataSource": {
+        "tabs": [
+          {
+            "tabId": "tab1",
+            "title": "Regulatory Directive: Semiconductor Microfabrication & Nanotech",
+            "content": "Directive 5.4 regarding Semiconductor Microfabrication & Nanotech:\nAll operating facilities must maintain an audit compliance score of at least 85 points. Facilities scoring at least 90 points receive expedited licensing status. Facilities scoring below 85 points are subject to mandatory operational reviews unless they have operated for more than 5 consecutive years with zero safety violations."
+          },
+          {
+            "tabId": "tab2",
+            "title": "Facility Audit Records",
+            "content": "Audit Inspection Summary for Region 5:\n- Plant North: Score 92; 3 years operating history; 0 safety violations.\n- Plant South: Score 84; 7 years operating history; 0 safety violations.\n- Plant East: Score 79; 2 years operating history; 1 safety violation.\n- Plant West: Score 88; 6 years operating history; 0 safety violations."
+          },
+          {
+            "tabId": "tab3",
+            "title": "Legal Appeals Protocol",
+            "content": "Protocol 9.2:\nFacilities placed under mandatory operational review may file an emergency stay within 14 business days. No facility with an active safety violation recorded in the preceding 12 months is eligible to file for an emergency stay."
+          }
+        ]
+      },
+      "options": [
+        "Plant North only",
+        "Plant North and Plant West only",
+        "Plant South and Plant West only",
+        "Plant North, Plant South, and Plant West",
+        "None of the facilities"
+      ],
+      "answer": "A",
+      "explanation": "Tab 1 specifies that a score of at least 90 is required for expedited licensing. Tab 2 shows only Plant North scored >= 90 (score 92). Plant West scored 88 (< 90). Thus, Plant North only qualifies.",
+      "trap": "Assuming Plant West qualifies because of its 6-year history (history only grants exemption from review, not expedited licensing).",
+      "estSeconds": 120
+    },
+    {
+      "id": "pt05_di19",
+      "test": 5,
+      "section": "DATA_INSIGHTS",
+      "type": "MULTI_SOURCE_REASONING",
+      "subtopic": "Multi-Source Reasoning",
+      "difficulty": "hard",
+      "difficultyScore": 8,
+      "stem": "Which facility at NanoLitho Technologies is subject to mandatory operational review according to the regulatory directive for semiconductor euv nanotechnology and the audit inspection records?",
+      "dataSource": {
+        "tabs": [
+          {
+            "tabId": "tab1",
+            "title": "Regulatory Directive: Semiconductor Microfabrication & Nanotech",
+            "content": "Directive 5.4 regarding Semiconductor Microfabrication & Nanotech:\nAll operating facilities must maintain an audit compliance score of at least 85 points. Facilities scoring at least 90 points receive expedited licensing status. Facilities scoring below 85 points are subject to mandatory operational reviews unless they have operated for more than 5 consecutive years with zero safety violations."
+          },
+          {
+            "tabId": "tab2",
+            "title": "Facility Audit Records",
+            "content": "Audit Inspection Summary for Region 5:\n- Plant North: Score 92; 3 years operating history; 0 safety violations.\n- Plant South: Score 84; 7 years operating history; 0 safety violations.\n- Plant East: Score 79; 2 years operating history; 1 safety violation.\n- Plant West: Score 88; 6 years operating history; 0 safety violations."
+          },
+          {
+            "tabId": "tab3",
+            "title": "Legal Appeals Protocol",
+            "content": "Protocol 9.2:\nFacilities placed under mandatory operational review may file an emergency stay within 14 business days. No facility with an active safety violation recorded in the preceding 12 months is eligible to file for an emergency stay."
+          }
+        ]
+      },
+      "options": [
+        "Plant East only",
+        "Plant South and Plant East only",
+        "Plant South only",
+        "Plant North and Plant East only",
+        "All four plants"
+      ],
+      "answer": "A",
+      "explanation": "Plants scoring below 85 are Plant South (84) and Plant East (79). However, Tab 1 exempts facilities operating >5 years with zero violations. Plant South has operated 7 years with 0 violations (exempt). Plant East has only 2 years and has a violation, so it is the ONLY plant subject to mandatory review.",
+      "trap": "Failing to check Plant South's 7-year zero-violation exemption in Tab 1.",
+      "estSeconds": 130
+    },
+    {
+      "id": "pt05_di20",
+      "test": 5,
+      "section": "DATA_INSIGHTS",
+      "type": "MULTI_SOURCE_REASONING",
+      "subtopic": "Multi-Source Reasoning",
+      "difficulty": "hard",
+      "difficultyScore": 9,
+      "stem": "Evaluating information across all three tabs for semiconductor euv nanotechnology, which strategic conclusion regarding the financial return of deploying extreme ultraviolet lithography scanner is most strongly supported?",
+      "dataSource": {
+        "tabs": [
+          {
+            "tabId": "tab1",
+            "title": "Regulatory Directive: Semiconductor Microfabrication & Nanotech",
+            "content": "Directive 5.4 regarding Semiconductor Microfabrication & Nanotech:\nAll operating facilities must maintain an audit compliance score of at least 85 points. Facilities scoring at least 90 points receive expedited licensing status. Facilities scoring below 85 points are subject to mandatory operational reviews unless they have operated for more than 5 consecutive years with zero safety violations."
+          },
+          {
+            "tabId": "tab2",
+            "title": "Facility Audit Records",
+            "content": "Audit Inspection Summary for Region 5:\n- Plant North: Score 92; 3 years operating history; 0 safety violations.\n- Plant South: Score 84; 7 years operating history; 0 safety violations.\n- Plant East: Score 79; 2 years operating history; 1 safety violation.\n- Plant West: Score 88; 6 years operating history; 0 safety violations."
+          },
+          {
+            "tabId": "tab3",
+            "title": "Legal Appeals Protocol",
+            "content": "Protocol 9.2:\nFacilities placed under mandatory operational review may file an emergency stay within 14 business days. No facility with an active safety violation recorded in the preceding 12 months is eligible to file for an emergency stay."
+          }
+        ]
+      },
+      "options": [
+        "No, because it has an active safety violation recorded in the preceding 12 months.",
+        "Yes, provided it files the paperwork within 14 business days.",
+        "Yes, because its compliance score was within 10 points of the 85 threshold.",
+        "No, because only facilities with more than 5 years operating history can file stays.",
+        "Yes, because emergency stays are automatically granted to all facilities."
+      ],
+      "answer": "A",
+      "explanation": "Tab 3 explicitly states: 'No facility with an active safety violation recorded in the preceding 12 months is eligible to file for an emergency stay.' Plant East has 1 safety violation (Tab 2), disqualifying it completely.",
+      "trap": "Focusing only on the 14-day filing window without checking the violation disqualification rule.",
+      "estSeconds": 115
+    }
+  ]
+}

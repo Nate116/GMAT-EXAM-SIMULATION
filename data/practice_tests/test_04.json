@@ -1,0 +1,1742 @@
+{
+  "testNumber": 4,
+  "id": "pt_04",
+  "title": "Official Focus Mock #4 (Full 64-Q Simulation)",
+  "date": "2025-02-18",
+  "totalScore": 675,
+  "quantScore": 81,
+  "verbalScore": 80,
+  "dataInsightsScore": 80,
+  "structure": {
+    "quantQuestions": 21,
+    "verbalQuestions": 23,
+    "dataInsightsQuestions": 20,
+    "total": 64,
+    "durationMinutes": 135
+  },
+  "questions": [
+    {
+      "id": "pt04_q01",
+      "test": 4,
+      "section": "QUANT",
+      "type": "PROBLEM_SOLVING",
+      "subtopic": "Number Properties & Divisibility",
+      "difficulty": "medium",
+      "difficultyScore": 6,
+      "stem": "In agricultural agronomy & hydrology, a barcode serial integer $n$ satisfies that $n^2 - 1$ is divisible by prime $17$. If $1 < n < 17$, how many integer values can $n$ assume?",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "16"
+      ],
+      "answer": "B",
+      "explanation": "Since $n^2 - 1 = (n - 1)(n + 1)$ is divisible by prime 17, by Euclid's lemma either 17 divides $(n - 1)$ or 17 divides $(n + 1)$. Given $1 < n < 17$, $n - 1 < 17$, so 17 cannot divide $n - 1$. For 17 to divide $n + 1$, we must have $n + 1 = 17 \\implies n = 16$. Thus, exactly 1 integer value ($n = 16$) satisfies the condition.",
+      "trap": "Assuming both $(n - 1)$ and $(n + 1)$ can yield solutions within the open interval $(1, p)$.",
+      "estSeconds": 90
+    },
+    {
+      "id": "pt04_q02",
+      "test": 4,
+      "section": "QUANT",
+      "type": "PROBLEM_SOLVING",
+      "subtopic": "Word Problems & Rates/Work",
+      "difficulty": "medium",
+      "difficultyScore": 6,
+      "stem": "At Metropolitan Water Authority, Water Resource Engineer monitors two operational units: Primary Unit Alpha completes a full cycle of groundwater infiltration monitoring in 8 hours working alone, whereas Secondary Unit Beta requires 16 hours alone. If both units operate simultaneously at their constant rates to complete the cycle on a shared artesian reservoir recharge basin, how many hours will they take together?",
+      "options": [
+        "4.17",
+        "4.67",
+        "5.17",
+        "10.50",
+        "5.25"
+      ],
+      "answer": "B",
+      "explanation": "Combined rate $R = 1/7 + 1/14 = 3/14$. Time $T = 1/R = 14/3 = 4.67$ hours.",
+      "trap": "Taking the arithmetic average of the two individual times.",
+      "estSeconds: 85": 85,
+      "estSeconds": 85
+    },
+    {
+      "id": "pt04_q03",
+      "test": 4,
+      "section": "QUANT",
+      "type": "PROBLEM_SOLVING",
+      "subtopic": "Percents, Ratios & Mixtures",
+      "difficulty": "medium",
+      "difficultyScore": 6,
+      "stem": "A civil engineering contractor marks up concrete culvert acquisition costs by 40%, then provides municipal buyers a 25% trade credit reduction. What profit percentage over initial cost is realized?",
+      "options": [
+        "10.0%",
+        "5.0%",
+        "15.0%",
+        "9.0%",
+        "20.0%"
+      ],
+      "answer": "B",
+      "explanation": "Multiplier $= (1 + 0.4) \\times (1 - 0.25) = 1.0500$. Net profit percentage $= (1.0500 - 1) \\times 100 = 5.0\\%$.",
+      "trap": "Subtracting the percentages directly (40% - 25% = 15%).",
+      "estSeconds": 90
+    },
+    {
+      "id": "pt04_q04",
+      "test": 4,
+      "section": "QUANT",
+      "type": "PROBLEM_SOLVING",
+      "subtopic": "Algebra & Exponents",
+      "difficulty": "hard",
+      "difficultyScore": 8,
+      "stem": "In a mathematical model tracking recharge infiltration at Metropolitan Water Authority, the exponent variable $x$ satisfies $2^{2x+1} - $2^{2x-1} = 96$. What is the value of $x^2 + x$?",
+      "options": [
+        "40",
+        "42",
+        "44",
+        "46",
+        "48"
+      ],
+      "answer": "B",
+      "explanation": "Factor out $3^{2x-1}$: $3^{2x-1}(3^2 - 1) = 177147(3^2 - 1)$. Equating exponents: $2x - 1 = 11 \\implies 2x = 12 \\implies x = 6$. Then $x^2 + x = 6^2 + 6 = 42$.",
+      "trap": "Miscalculating the factored term $(base^2 - 1)$.",
+      "estSeconds": 100
+    },
+    {
+      "id": "pt04_q05",
+      "test": 4,
+      "section": "QUANT",
+      "type": "PROBLEM_SOLVING",
+      "subtopic": "Inequalities & Absolute Values",
+      "difficulty": "hard",
+      "difficultyScore": 8,
+      "stem": "During a tolerance check on artesian reservoir recharge basin measurements at Metropolitan Water Authority, how many integer values of $k$ satisfy the inequality $|2k - 9| \\le 19$?",
+      "options": [
+        "17",
+        "18",
+        "19",
+        "20",
+        "16"
+      ],
+      "answer": "B",
+      "explanation": "Expand absolute value: $-17 \\le 2k - 8 \\le 17 \\implies -9 \\le 2k \\le 25 \\implies -4.5 \\le k \\le 12.5$. Length of interval for integers is strictly 18.",
+      "trap": "Neglecting to include both endpoints when calculating inclusive integer count.",
+      "estSeconds": 95
+    },
+    {
+      "id": "pt04_q06",
+      "test": 4,
+      "section": "QUANT",
+      "type": "PROBLEM_SOLVING",
+      "subtopic": "Statistics & Standard Deviation",
+      "difficulty": "hard",
+      "difficultyScore": 8,
+      "stem": "A reservoir monitoring station logs 7 distinct positive integer water inflow rates in cubic feet per second, yielding a median rate of 22 and a mean rate of 27. What is the highest possible value for the fastest inflow rate?",
+      "options": [
+        "131",
+        "133",
+        "135",
+        "137",
+        "139"
+      ],
+      "answer": "C",
+      "explanation": "To maximize $x_7$, minimize elements 1, 2, 3, 5, 6. Minimum distinct positive integers: $x_1=1, x_2=2, x_3=3$. Given median $x_4 = 29$. Minimum distinct integers above median: $x_5 = 30, x_6 = 31$. Sum of all 7 integers $= 7 \\times 33 = 231$. Subtracting the 6 minimal values leaves maximum $x_7 = 135$.",
+      "trap": "Allowing integers above median to equal the median rather than being strictly distinct.",
+      "estSeconds": 115
+    },
+    {
+      "id": "pt04_q07",
+      "test": 4,
+      "section": "QUANT",
+      "type": "PROBLEM_SOLVING",
+      "subtopic": "Probability & Combinatorics",
+      "difficulty": "hard",
+      "difficultyScore": 8,
+      "stem": "A municipal hydrology board of 4 inspectors is picked from 5 civil hydrologists and 5 environmental lawyers. If the board must comprise at least 2 hydrologists and at least 2 lawyers, how many selections are valid?",
+      "options": [
+        "90",
+        "95",
+        "100",
+        "105",
+        "110"
+      ],
+      "answer": "C",
+      "explanation": "Ways to select 2 hardware engineers from 5: $\\binom{5}{2} = 10$. Ways to select 2 software architects from 5: $\\binom{5}{2} = 10$. Total distinct combinations $= 10 \\times 10 = 100$.",
+      "trap": "Adding the combinations instead of multiplying.",
+      "estSeconds": 105
+    },
+    {
+      "id": "pt04_q08",
+      "test": 4,
+      "section": "QUANT",
+      "type": "PROBLEM_SOLVING",
+      "subtopic": "Number Properties & Divisibility",
+      "difficulty": "hard",
+      "difficultyScore": 8,
+      "stem": "In hydrological streamflow simulation equations, what is the highest integer $k$ such that $3^k$ is an exact divisor of $50!$?",
+      "options": [
+        "11",
+        "12",
+        "13",
+        "14",
+        "15"
+      ],
+      "answer": "C",
+      "explanation": "Powers of 10 in a factorial are limited by prime factor 5. Using Legendre's formula: $\\lfloor 55/5 \\rfloor + \\lfloor 55/25 \\rfloor = 11 + 2 = 13$. Thus $k = 13$.",
+      "trap": "Counting powers of 2 or stopping after first division by 5.",
+      "estSeconds": 90
+    },
+    {
+      "id": "pt04_q09",
+      "test": 4,
+      "section": "QUANT",
+      "type": "PROBLEM_SOLVING",
+      "subtopic": "Word Problems & Rates/Work",
+      "difficulty": "medium",
+      "difficultyScore": 7,
+      "stem": "A hydrology field survey boat navigates upstream along a river reach of distance $D$ at 44 mph, and returns downstream at 88 mph. What is the boat's average round-trip speed?",
+      "options": [
+        "56.1",
+        "59.0",
+        "58.1",
+        "54.1",
+        "60.5"
+      ],
+      "answer": "A",
+      "explanation": "Average speed over equal distances is the harmonic mean: $V = \\frac{2 s_1 s_2}{s_1 + s_2} = \\frac{2 \\times 46 \\times 72}{118} = 56.1$ mph.",
+      "trap": "Choosing the arithmetic mean (option B).",
+      "estSeconds": 80
+    },
+    {
+      "id": "pt04_q10",
+      "test": 4,
+      "section": "QUANT",
+      "type": "PROBLEM_SOLVING",
+      "subtopic": "Percents, Ratios & Mixtures",
+      "difficulty": "hard",
+      "difficultyScore": 8,
+      "stem": "A groundwater filtration tank contains 60 liters of wastewater with 30% dissolved mineral salts. How many liters of fresh water are needed to dilute the tank to a 15% salt concentration?",
+      "options": [
+        "41",
+        "43",
+        "45",
+        "47",
+        "49"
+      ],
+      "answer": "C",
+      "explanation": "Solvent mass is constant: $0.20 \\times 45 = 0.10 \\times (45 + w) \\implies 45 + w = 90 \\implies w = 45$ liters.",
+      "trap": "Reporting total final volume rather than added water.",
+      "estSeconds": 95
+    },
+    {
+      "id": "pt04_q11",
+      "test": 4,
+      "section": "QUANT",
+      "type": "PROBLEM_SOLVING",
+      "subtopic": "Sequences & Series",
+      "difficulty": "medium",
+      "difficultyScore": 6,
+      "stem": "In an arithmetic sequence monitoring agricultural agronomy & hydrology production batches, the first term is 7 and the common difference between consecutive terms is 3. What is the sum of the first 15 terms of this sequence?",
+      "options": [
+        "405",
+        "412",
+        "420",
+        "428",
+        "435"
+      ],
+      "answer": "C",
+      "explanation": "Sum formula $S_{15} = \\frac{15}{2} [2(7) + 14(3)] = 15 \\times [7 + 7(3)] = 420$.",
+      "trap": "Using 15d instead of (n-1)d in the summation formula.",
+      "estSeconds": 90
+    },
+    {
+      "id": "pt04_q12",
+      "test": 4,
+      "section": "QUANT",
+      "type": "PROBLEM_SOLVING",
+      "subtopic": "Word Problems & Overlapping Sets",
+      "difficulty": "medium",
+      "difficultyScore": 7,
+      "stem": "Among 130 technical facilities surveyed in agricultural agronomy & hydrology, 62 have implemented Protocol A, 52 have implemented Protocol B, and 13 have implemented neither. How many facilities have implemented BOTH Protocol A and Protocol B?",
+      "options": [
+        "-7",
+        "-5",
+        "-3",
+        "-1",
+        "1"
+      ],
+      "answer": "C",
+      "explanation": "Facilities with at least one protocol $= 130 - 13 = 117$. By inclusion-exclusion: $|A \\cap B| = |A| + |B| - |A \\cup B| = 62 + 52 - 117 = -3$.",
+      "trap": "Subtracting neither from both sets individually.",
+      "estSeconds": 85
+    },
+    {
+      "id": "pt04_q13",
+      "test": 4,
+      "section": "QUANT",
+      "type": "PROBLEM_SOLVING",
+      "subtopic": "Probability & Combinatorics",
+      "difficulty": "hard",
+      "difficultyScore": 8,
+      "stem": "An aquifer testing kit contains 5 red reagent tablets and 7 blue reagent tablets. If a hydrologist selects 3 tablets at random without replacement, what is the probability that exactly 2 are red?",
+      "options": [
+        "\\frac{18}{45}",
+        "\\frac{19}{45}",
+        "\\frac{20}{45}",
+        "\\frac{21}{45}",
+        "\\frac{22}{45}"
+      ],
+      "answer": "C",
+      "explanation": "Ways to draw two compliant parts: $\\binom{5}{2} = 10$. Ways to draw two defective parts: $\\binom{5}{2} = 10$. Total favorable $= 20$. Total unrestricted pairs: $\\binom{10}{2} = 45$. Probability $= 20/45$.",
+      "trap": "Assuming sampling with replacement.",
+      "estSeconds": 100
+    },
+    {
+      "id": "pt04_q14",
+      "test": 4,
+      "section": "QUANT",
+      "type": "PROBLEM_SOLVING",
+      "subtopic": "Algebra & Quadratics",
+      "difficulty": "hard",
+      "difficultyScore": 8,
+      "stem": "An artesian aquifer infiltration equation $x^2 - 15x + K = 0$ has two integer roots whose difference is 5. What is the numerical value of $K$?",
+      "options": [
+        "56",
+        "58",
+        "60",
+        "62",
+        "64"
+      ],
+      "answer": "C",
+      "explanation": "Let roots be $r_1$ and $r_2$. Sum $r_1 + r_2 = 16$, and difference $r_2 - r_1 = 4$. Solving gives roots $r_1 = 6$ and $r_2 = 10$. By Vieta's formulas, $K = r_1 \\times r_2 = 6 \\times 10 = 60$.",
+      "trap": "Adding the roots rather than multiplying for the constant term $K$.",
+      "estSeconds": 85
+    },
+    {
+      "id": "pt04_q15",
+      "test": 4,
+      "section": "QUANT",
+      "type": "PROBLEM_SOLVING",
+      "subtopic": "Number Properties & Divisibility",
+      "difficulty": "hard",
+      "difficultyScore": 9,
+      "stem": "In an algorithmic encryption routine for civil hydrology & aquifer management, what is the units digit of the integer evaluation $7^{59} + 3$?",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "answer": "C",
+      "explanation": "Powers of 7 cycle in units digits: $7^1 \\rightarrow 7, 7^2 \\rightarrow 9, 7^3 \\rightarrow 3, 7^4 \\rightarrow 1$. Exponent $55 \\equiv 3 \\pmod 4$, so $7^{55}$ ends in 3. Adding 3 gives a units digit of $(3 + 3) \\pmod 10 = 6$.",
+      "trap": "Failing to apply base-4 cyclicity to the exponent.",
+      "estSeconds": 80
+    },
+    {
+      "id": "pt04_q16",
+      "test": 4,
+      "section": "QUANT",
+      "type": "PROBLEM_SOLVING",
+      "subtopic": "Coordinate & Analytical Geometry",
+      "difficulty": "medium",
+      "difficultyScore": 6,
+      "stem": "In a Cartesian telemetry grid mapping artesian reservoir recharge basin coordinates for Metropolitan Water Authority, line $L_1$ passes through $(0, 9)$ and $(7, 0)$. If perpendicular line $L_2$ intersects the origin $(0, 0)$, what is the slope of line $L_2$?",
+      "options": [
+        "\\frac{6}{8}",
+        "-\\frac{6}{8}",
+        "\\frac{8}{6}",
+        "-\\frac{8}{6}",
+        "1"
+      ],
+      "answer": "A",
+      "explanation": "Slope of $L_1$ is $m_1 = \\frac{0 - 8}{6 - 0} = -\\frac{8}{6}$. Perpendicular slope $m_2 = -1/m_1 = \\frac{6}{8}$.",
+      "trap": "Inverting without negating (option B or C).",
+      "estSeconds: 75": 75,
+      "estSeconds": 75
+    },
+    {
+      "id": "pt04_q17",
+      "test": 4,
+      "section": "QUANT",
+      "type": "PROBLEM_SOLVING",
+      "subtopic": "Statistics & Standard Deviation",
+      "difficulty": "hard",
+      "difficultyScore": 8,
+      "stem": "In a sensor calibration test in agricultural agronomy & hydrology, the standard deviation of pressure readings was 4.0 psi. If each reading is multiplied by 1.25 and then decreased by 3.5 psi, what is the standard deviation of the transformed readings in psi?",
+      "options": [
+        "1.50",
+        "5.00",
+        "4.00",
+        "8.50",
+        "6.00"
+      ],
+      "answer": "B",
+      "explanation": "Standard deviation is unaffected by the subtraction of a constant (-3.5), but scales by $|1.25|$: $\\sigma_{new} = 1.25 \\times 4.0 = 5.00$ psi.",
+      "trap": "Subtracting 3.5 from the standard deviation (option A).",
+      "estSeconds": 70
+    },
+    {
+      "id": "pt04_q18",
+      "test": 4,
+      "section": "QUANT",
+      "type": "PROBLEM_SOLVING",
+      "subtopic": "Word Problems & Rates/Work",
+      "difficulty": "hard",
+      "difficultyScore": 9,
+      "stem": "In civil hydrology & aquifer management, replacement parts for artesian reservoir recharge basin at Metropolitan Water Authority are packaged strictly in quantities of 4 or 7 units. What is the greatest integer number of units that cannot be assembled using non-negative combinations of these packages?",
+      "options": [
+        "25",
+        "26",
+        "27",
+        "28",
+        "29"
+      ],
+      "answer": "C",
+      "explanation": "By the Frobenius Coin Formula for coprime integers $a$ and $b$, the largest non-constructible integer is $ab - a - b = (5)(8) - 5 - 8 = 27$.",
+      "trap": "Computing ab directly without subtracting (a + b).",
+      "estSeconds": 110
+    },
+    {
+      "id": "pt04_q19",
+      "test": 4,
+      "section": "QUANT",
+      "type": "PROBLEM_SOLVING",
+      "subtopic": "Number Properties & Divisibility",
+      "difficulty": "hard",
+      "difficultyScore": 8,
+      "stem": "When the digits of a two-digit aquifer monitoring code $N$ are reversed, the resulting number is 27 greater than $N$. What is the difference between the units digit and the tens digit of $N$?",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": "C",
+      "explanation": "$(10B + A) - (10A + B) = 9(B - A) = 18 \\implies B - A = 2$.",
+      "trap": "Confusing (B - A) with (A - B).",
+      "estSeconds": 75
+    },
+    {
+      "id": "pt04_q20",
+      "test": 4,
+      "section": "QUANT",
+      "type": "PROBLEM_SOLVING",
+      "subtopic": "Percents, Ratios & Mixtures",
+      "difficulty": "hard",
+      "difficultyScore": 8,
+      "stem": "A capital expenditure allocation of $\\$7,000$ in agricultural agronomy & hydrology appreciates at an annual rate of 10% compounded semi-annually. What is the total accumulated interest after 1 year?",
+      "options": [
+        "\\$700",
+        "\\$718",
+        "\\$735",
+        "\\$770",
+        "\\$788"
+      ],
+      "answer": "B",
+      "explanation": "Semi-annual rate is 5% over 2 periods. Multiplier is $(1.05)^2 = 1.1025$. Interest $= 7000 \\times 0.1025 = \\$718$.",
+      "trap": "Calculating simple interest at 10% (option A).",
+      "estSeconds": 90
+    },
+    {
+      "id": "pt04_q21",
+      "test": 4,
+      "section": "QUANT",
+      "type": "PROBLEM_SOLVING",
+      "subtopic": "Algebra & Exponents",
+      "difficulty": "hard",
+      "difficultyScore": 9,
+      "stem": "For all positive real numbers $u$ and $v$ modeling recharge infiltration at Metropolitan Water Authority, an operational operator $\\star$ is defined by $u \\star v = \\frac{u^2 - v^2}{u - v}$. What is the numerical value of $10 \\star 3$?",
+      "options": [
+        "\\frac{5}{2}",
+        "\\frac{5}{3}",
+        "\\frac{5}{4}",
+        "5",
+        "1"
+      ],
+      "answer": "B",
+      "explanation": "$5 \\diamond 5 = \\frac{5 \\times 5}{5 + 5 + 5} = \\frac{5^2}{3(5)} = \\frac{5}{3}$.",
+      "trap": "Adding the constants in the denominator incorrectly.",
+      "estSeconds": 85
+    },
+    {
+      "id": "pt04_v01",
+      "test": 4,
+      "section": "VERBAL",
+      "type": "READING_COMPREHENSION",
+      "subtopic": "Reading Comprehension",
+      "difficulty": "medium",
+      "difficultyScore": 6,
+      "passage": "The classical forestry model long treated individual canopy trees as autonomous competitors competing for limited soil minerals and sunlight. Under this individualistic resource-competition framework, silviculturists assumed that dense forest stands inevitably experienced competitive thinning as dominant individuals suppressed neighbors.\n\nSubsequent isotopic tracing experiments utilizing carbon-13 and carbon-14 have overturned this atomized conception by uncovering extensive mycorrhizal fungal networks linking root systems across entire forest communities. Mature 'mother trees' dynamically shuttle carbohydrates and nitrogen through fungal hyphae to shade-suppressed understory seedlings, actively maintaining multi-species diversity and buffering the collective grove against localized pathogen outbreaks.",
+      "stem": "The primary purpose of the passage on mycorrhizal fungal networks & forest nutrient allocation is to:",
+      "options": [
+        "Refute an established scientific doctrine by demonstrating that earlier measurements were entirely fraudulent.",
+        "Challenge a traditional foundational model by presenting recent empirical evidence that supports an alternative paradigm.",
+        "Reconcile two competing historical hypotheses by proposing a hybrid theoretical compromise.",
+        "Advocate for the immediate cessation of field testing until biochemical instruments are standardized.",
+        "Prove that evolutionary biological adaptations occur exclusively through physical genomic sequence alterations."
+      ],
+      "answer": "B",
+      "explanation": "The passage outlines a traditional, long-standing theoretical assumption in its opening paragraph, then introduces modern empirical methodologies that challenge that framework and suggest a more dynamic mechanism.",
+      "trap": "Selecting option A, which uses extreme, accusatory language ('entirely fraudulent') unsupported by the text.",
+      "estSeconds": 100
+    },
+    {
+      "id": "pt04_v02",
+      "test": 4,
+      "section": "VERBAL",
+      "type": "READING_COMPREHENSION",
+      "subtopic": "Reading Comprehension",
+      "difficulty": "hard",
+      "difficultyScore": 8,
+      "passage": "The classical forestry model long treated individual canopy trees as autonomous competitors competing for limited soil minerals and sunlight. Under this individualistic resource-competition framework, silviculturists assumed that dense forest stands inevitably experienced competitive thinning as dominant individuals suppressed neighbors.\n\nSubsequent isotopic tracing experiments utilizing carbon-13 and carbon-14 have overturned this atomized conception by uncovering extensive mycorrhizal fungal networks linking root systems across entire forest communities. Mature 'mother trees' dynamically shuttle carbohydrates and nitrogen through fungal hyphae to shade-suppressed understory seedlings, actively maintaining multi-species diversity and buffering the collective grove against localized pathogen outbreaks.",
+      "stem": "It can be inferred from the passage on mycorrhizal fungal networks & forest nutrient allocation that proponents of the earlier model assumed that:",
+      "options": [
+        "Biological systems exhibit extensive behavioral plasticity when subjected to environmental shifts.",
+        "Observed physical phenomena were governed primarily by static or localized equilibrium constraints.",
+        "Molecular sequencing technologies would permanently confirm traditional observational hypotheses.",
+        "Nutrient availability was completely uniform across all ecological micro-habitats.",
+        "Adaptive modifications could be transmitted across generations without physical nucleotide changes."
+      ],
+      "answer": "B",
+      "explanation": "The passage notes that the classical model assumed static, rigid constraints (e.g., rigid niche partitioning, exclusive nucleotide dependence, or uniform competition) before modern dynamic evidence emerged.",
+      "trap": "Confusing the revisionist perspective with the traditional hypothesis being evaluated.",
+      "estSeconds": 110
+    },
+    {
+      "id": "pt04_v03",
+      "test": 4,
+      "section": "VERBAL",
+      "type": "READING_COMPREHENSION",
+      "subtopic": "Reading Comprehension",
+      "difficulty": "medium",
+      "difficultyScore": 7,
+      "passage": "The classical forestry model long treated individual canopy trees as autonomous competitors competing for limited soil minerals and sunlight. Under this individualistic resource-competition framework, silviculturists assumed that dense forest stands inevitably experienced competitive thinning as dominant individuals suppressed neighbors.\n\nSubsequent isotopic tracing experiments utilizing carbon-13 and carbon-14 have overturned this atomized conception by uncovering extensive mycorrhizal fungal networks linking root systems across entire forest communities. Mature 'mother trees' dynamically shuttle carbohydrates and nitrogen through fungal hyphae to shade-suppressed understory seedlings, actively maintaining multi-species diversity and buffering the collective grove against localized pathogen outbreaks.",
+      "stem": "According to the second paragraph of the passage on mycorrhizal fungal networks & forest nutrient allocation, the newly discovered mechanism is significant primarily because it:",
+      "options": [
+        "Eliminates all scientific uncertainty surrounding global atmospheric convection.",
+        "Demonstrates that biological entities can adapt or function through pathways previously deemed impossible or secondary.",
+        "Proves that evolutionary mutations occur at a constant mathematical rate across geological epochs.",
+        "Forces commercial enterprises to halt exploratory drilling operations immediately.",
+        "Refutes the universal applicability of thermodynamic physical laws."
+      ],
+      "answer": "B",
+      "explanation": "Paragraph 2 reveals an independent or dynamic pathway (e.g. chemolithoautotrophy, epigenetic inheritance, leading-edge vortices, or mycorrhizal resource sharing) that classical science deemed impossible or minor.",
+      "trap": "Selecting an overly grandiose claim that the finding overturns fundamental thermodynamic laws (option E).",
+      "estSeconds": 95
+    },
+    {
+      "id": "pt04_v04",
+      "test": 4,
+      "section": "VERBAL",
+      "type": "READING_COMPREHENSION",
+      "subtopic": "Reading Comprehension",
+      "difficulty": "hard",
+      "difficultyScore": 8,
+      "passage": "The classical forestry model long treated individual canopy trees as autonomous competitors competing for limited soil minerals and sunlight. Under this individualistic resource-competition framework, silviculturists assumed that dense forest stands inevitably experienced competitive thinning as dominant individuals suppressed neighbors.\n\nSubsequent isotopic tracing experiments utilizing carbon-13 and carbon-14 have overturned this atomized conception by uncovering extensive mycorrhizal fungal networks linking root systems across entire forest communities. Mature 'mother trees' dynamically shuttle carbohydrates and nitrogen through fungal hyphae to shade-suppressed understory seedlings, actively maintaining multi-species diversity and buffering the collective grove against localized pathogen outbreaks.",
+      "stem": "The author\u2019s attitude toward the traditional scientific framework in mycorrhizal fungal networks & forest nutrient allocation can best be described as:",
+      "options": [
+        "Uncompromisingly hostile and dismissive of historical scholars.",
+        "Respectful of its historical role while emphasizing its conceptual limitations in light of recent findings.",
+        "Enthusiastically supportive of its continuing supremacy over modern data.",
+        "Indifferent to its theoretical and practical consequences.",
+        "Skeptical of whether any scientific paradigm can ever be empirically tested."
+      ],
+      "answer": "B",
+      "explanation": "The author treats the historical paradigm with measured academic respect ('long held', 'classical framework') while clearly identifying its empirical limitations.",
+      "trap": "Choosing an exaggerated emotional descriptor like hostile or indifferent.",
+      "estSeconds": 100
+    },
+    {
+      "id": "pt04_v05",
+      "test": 4,
+      "section": "VERBAL",
+      "type": "READING_COMPREHENSION",
+      "subtopic": "Reading Comprehension",
+      "difficulty": "hard",
+      "difficultyScore": 7,
+      "passage": "The classical forestry model long treated individual canopy trees as autonomous competitors competing for limited soil minerals and sunlight. Under this individualistic resource-competition framework, silviculturists assumed that dense forest stands inevitably experienced competitive thinning as dominant individuals suppressed neighbors.\n\nSubsequent isotopic tracing experiments utilizing carbon-13 and carbon-14 have overturned this atomized conception by uncovering extensive mycorrhizal fungal networks linking root systems across entire forest communities. Mature 'mother trees' dynamically shuttle carbohydrates and nitrogen through fungal hyphae to shade-suppressed understory seedlings, actively maintaining multi-species diversity and buffering the collective grove against localized pathogen outbreaks.",
+      "stem": "According to the text examining mycorrhizal networks, which isotope tracing procedure demonstrated that fungal hyphae sequester rather than passively transfer arboreal sugars?",
+      "options": [
+        "Incorporate dynamic, non-linear mechanisms alongside classical equilibrium factors.",
+        "Discard all empirical data gathered prior to the implementation of molecular sequencing.",
+        "Assume that environmental stressors produce identical physiological outcomes in all phyla.",
+        "Treat biological organisms as strictly autonomous competitive units in all ecological contexts.",
+        "Rely solely on theoretical computer simulations rather than field sampling."
+      ],
+      "answer": "A",
+      "explanation": "The overarching conclusion of the passage on mycorrhizal fungal networks & forest nutrient allocation is that emerging empirical discoveries necessitate integrating flexible, dynamic models with foundational scientific principles.",
+      "trap": "Selecting an answer that advises discarding all historical scientific work.",
+      "estSeconds": 105
+    },
+    {
+      "id": "pt04_v06",
+      "test": 4,
+      "section": "VERBAL",
+      "type": "READING_COMPREHENSION",
+      "subtopic": "Reading Comprehension",
+      "difficulty": "medium",
+      "difficultyScore": 8,
+      "passage": "The classical forestry model long treated individual canopy trees as autonomous competitors competing for limited soil minerals and sunlight. Under this individualistic resource-competition framework, silviculturists assumed that dense forest stands inevitably experienced competitive thinning as dominant individuals suppressed neighbors.\n\nSubsequent isotopic tracing experiments utilizing carbon-13 and carbon-14 have overturned this atomized conception by uncovering extensive mycorrhizal fungal networks linking root systems across entire forest communities. Mature 'mother trees' dynamically shuttle carbohydrates and nitrogen through fungal hyphae to shade-suppressed understory seedlings, actively maintaining multi-species diversity and buffering the collective grove against localized pathogen outbreaks.",
+      "stem": "With which of the following characterizations of inter-plant fungal trade would the author of the passage most strongly agree?",
+      "options": [
+        "Incorporate dynamic, non-linear mechanisms alongside classical equilibrium factors.",
+        "Discard all empirical data gathered prior to the implementation of molecular sequencing.",
+        "Assume that environmental stressors produce identical physiological outcomes in all phyla.",
+        "Treat biological organisms as strictly autonomous competitive units in all ecological contexts.",
+        "Rely solely on theoretical computer simulations rather than field sampling."
+      ],
+      "answer": "A",
+      "explanation": "The overarching conclusion of the passage on mycorrhizal fungal networks & forest nutrient allocation is that emerging empirical discoveries necessitate integrating flexible, dynamic models with foundational scientific principles.",
+      "trap": "Selecting an answer that advises discarding all historical scientific work.",
+      "estSeconds": 105
+    },
+    {
+      "id": "pt04_v07",
+      "test": 4,
+      "section": "VERBAL",
+      "type": "READING_COMPREHENSION",
+      "subtopic": "Reading Comprehension",
+      "difficulty": "hard",
+      "difficultyScore": 9,
+      "passage": "The classical forestry model long treated individual canopy trees as autonomous competitors competing for limited soil minerals and sunlight. Under this individualistic resource-competition framework, silviculturists assumed that dense forest stands inevitably experienced competitive thinning as dominant individuals suppressed neighbors.\n\nSubsequent isotopic tracing experiments utilizing carbon-13 and carbon-14 have overturned this atomized conception by uncovering extensive mycorrhizal fungal networks linking root systems across entire forest communities. Mature 'mother trees' dynamically shuttle carbohydrates and nitrogen through fungal hyphae to shade-suppressed understory seedlings, actively maintaining multi-species diversity and buffering the collective grove against localized pathogen outbreaks.",
+      "stem": "Which of the following best characterizes the rhetorical organization and logical progression of the passage analyzing civil hydrology & aquifer management?",
+      "options": [
+        "Incorporate dynamic, non-linear mechanisms alongside classical equilibrium factors.",
+        "Discard all empirical data gathered prior to the implementation of molecular sequencing.",
+        "Assume that environmental stressors produce identical physiological outcomes in all phyla.",
+        "Treat biological organisms as strictly autonomous competitive units in all ecological contexts.",
+        "Rely solely on theoretical computer simulations rather than field sampling."
+      ],
+      "answer": "A",
+      "explanation": "The overarching conclusion of the passage on mycorrhizal fungal networks & forest nutrient allocation is that emerging empirical discoveries necessitate integrating flexible, dynamic models with foundational scientific principles.",
+      "trap": "Selecting an answer that advises discarding all historical scientific work.",
+      "estSeconds": 105
+    },
+    {
+      "id": "pt04_v08",
+      "test": 4,
+      "section": "VERBAL",
+      "type": "READING_COMPREHENSION",
+      "subtopic": "Reading Comprehension",
+      "difficulty": "medium",
+      "difficultyScore": 7,
+      "passage": "The classical forestry model long treated individual canopy trees as autonomous competitors competing for limited soil minerals and sunlight. Under this individualistic resource-competition framework, silviculturists assumed that dense forest stands inevitably experienced competitive thinning as dominant individuals suppressed neighbors.\n\nSubsequent isotopic tracing experiments utilizing carbon-13 and carbon-14 have overturned this atomized conception by uncovering extensive mycorrhizal fungal networks linking root systems across entire forest communities. Mature 'mother trees' dynamically shuttle carbohydrates and nitrogen through fungal hyphae to shade-suppressed understory seedlings, actively maintaining multi-species diversity and buffering the collective grove against localized pathogen outbreaks.",
+      "stem": "In the context of the second paragraph of the passage on civil hydrology & aquifer management, the author's primary analytical focus centers on:",
+      "options": [
+        "Incorporate dynamic, non-linear mechanisms alongside classical equilibrium factors.",
+        "Discard all empirical data gathered prior to the implementation of molecular sequencing.",
+        "Assume that environmental stressors produce identical physiological outcomes in all phyla.",
+        "Treat biological organisms as strictly autonomous competitive units in all ecological contexts.",
+        "Rely solely on theoretical computer simulations rather than field sampling."
+      ],
+      "answer": "A",
+      "explanation": "The overarching conclusion of the passage on mycorrhizal fungal networks & forest nutrient allocation is that emerging empirical discoveries necessitate integrating flexible, dynamic models with foundational scientific principles.",
+      "trap": "Selecting an answer that advises discarding all historical scientific work.",
+      "estSeconds": 105
+    },
+    {
+      "id": "pt04_v09",
+      "test": 4,
+      "section": "VERBAL",
+      "type": "READING_COMPREHENSION",
+      "subtopic": "Reading Comprehension",
+      "difficulty": "hard",
+      "difficultyScore": 8,
+      "passage": "The classical forestry model long treated individual canopy trees as autonomous competitors competing for limited soil minerals and sunlight. Under this individualistic resource-competition framework, silviculturists assumed that dense forest stands inevitably experienced competitive thinning as dominant individuals suppressed neighbors.\n\nSubsequent isotopic tracing experiments utilizing carbon-13 and carbon-14 have overturned this atomized conception by uncovering extensive mycorrhizal fungal networks linking root systems across entire forest communities. Mature 'mother trees' dynamically shuttle carbohydrates and nitrogen through fungal hyphae to shade-suppressed understory seedlings, actively maintaining multi-species diversity and buffering the collective grove against localized pathogen outbreaks.",
+      "stem": "The author introduces competing hypotheses and potential criticisms in the discussion of civil hydrology & aquifer management primarily in order to:",
+      "options": [
+        "Incorporate dynamic, non-linear mechanisms alongside classical equilibrium factors.",
+        "Discard all empirical data gathered prior to the implementation of molecular sequencing.",
+        "Assume that environmental stressors produce identical physiological outcomes in all phyla.",
+        "Treat biological organisms as strictly autonomous competitive units in all ecological contexts.",
+        "Rely solely on theoretical computer simulations rather than field sampling."
+      ],
+      "answer": "A",
+      "explanation": "The overarching conclusion of the passage on mycorrhizal fungal networks & forest nutrient allocation is that emerging empirical discoveries necessitate integrating flexible, dynamic models with foundational scientific principles.",
+      "trap": "Selecting an answer that advises discarding all historical scientific work.",
+      "estSeconds": 105
+    },
+    {
+      "id": "pt04_v10",
+      "test": 4,
+      "section": "VERBAL",
+      "type": "READING_COMPREHENSION",
+      "subtopic": "Reading Comprehension",
+      "difficulty": "medium",
+      "difficultyScore": 9,
+      "passage": "The classical forestry model long treated individual canopy trees as autonomous competitors competing for limited soil minerals and sunlight. Under this individualistic resource-competition framework, silviculturists assumed that dense forest stands inevitably experienced competitive thinning as dominant individuals suppressed neighbors.\n\nSubsequent isotopic tracing experiments utilizing carbon-13 and carbon-14 have overturned this atomized conception by uncovering extensive mycorrhizal fungal networks linking root systems across entire forest communities. Mature 'mother trees' dynamically shuttle carbohydrates and nitrogen through fungal hyphae to shade-suppressed understory seedlings, actively maintaining multi-species diversity and buffering the collective grove against localized pathogen outbreaks.",
+      "stem": "Based on the author's mycorrhizal trade model, how would forest ecologists interpret increased carbon allocation from fungi to root tips during severe nitrogen scarcity?",
+      "options": [
+        "Incorporate dynamic, non-linear mechanisms alongside classical equilibrium factors.",
+        "Discard all empirical data gathered prior to the implementation of molecular sequencing.",
+        "Assume that environmental stressors produce identical physiological outcomes in all phyla.",
+        "Treat biological organisms as strictly autonomous competitive units in all ecological contexts.",
+        "Rely solely on theoretical computer simulations rather than field sampling."
+      ],
+      "answer": "A",
+      "explanation": "The overarching conclusion of the passage on mycorrhizal fungal networks & forest nutrient allocation is that emerging empirical discoveries necessitate integrating flexible, dynamic models with foundational scientific principles.",
+      "trap": "Selecting an answer that advises discarding all historical scientific work.",
+      "estSeconds": 105
+    },
+    {
+      "id": "pt04_v11",
+      "test": 4,
+      "section": "VERBAL",
+      "type": "READING_COMPREHENSION",
+      "subtopic": "Reading Comprehension",
+      "difficulty": "hard",
+      "difficultyScore": 7,
+      "passage": "The classical forestry model long treated individual canopy trees as autonomous competitors competing for limited soil minerals and sunlight. Under this individualistic resource-competition framework, silviculturists assumed that dense forest stands inevitably experienced competitive thinning as dominant individuals suppressed neighbors.\n\nSubsequent isotopic tracing experiments utilizing carbon-13 and carbon-14 have overturned this atomized conception by uncovering extensive mycorrhizal fungal networks linking root systems across entire forest communities. Mature 'mother trees' dynamically shuttle carbohydrates and nitrogen through fungal hyphae to shade-suppressed understory seedlings, actively maintaining multi-species diversity and buffering the collective grove against localized pathogen outbreaks.",
+      "stem": "The passage indicates that future scientific and operational frameworks in civil hydrology & aquifer management will be required to:",
+      "options": [
+        "Incorporate dynamic, non-linear mechanisms alongside classical equilibrium factors.",
+        "Discard all empirical data gathered prior to the implementation of molecular sequencing.",
+        "Assume that environmental stressors produce identical physiological outcomes in all phyla.",
+        "Treat biological organisms as strictly autonomous competitive units in all ecological contexts.",
+        "Rely solely on theoretical computer simulations rather than field sampling."
+      ],
+      "answer": "A",
+      "explanation": "The overarching conclusion of the passage on mycorrhizal fungal networks & forest nutrient allocation is that emerging empirical discoveries necessitate integrating flexible, dynamic models with foundational scientific principles.",
+      "trap": "Selecting an answer that advises discarding all historical scientific work.",
+      "estSeconds": 105
+    },
+    {
+      "id": "pt04_v12",
+      "test": 4,
+      "section": "VERBAL",
+      "type": "CRITICAL_REASONING",
+      "subtopic": "Critical Reasoning",
+      "difficulty": "hard",
+      "difficultyScore": 8,
+      "stem": "Water Resource Engineer at Metropolitan Water Authority: \"Deploying artesian reservoir recharge basin will enable our division to optimize recharge infiltration within twelve months. Therefore, the executive steering committee must approve our funding request without delay.\"\n\nWhich of the following is an unstated assumption upon which the water resource engineer's argument depends?",
+      "options": [
+        "The policy will not inadvertently trigger untested late-stage toxicity that cancels out the expected gains.",
+        "The capital allocation required is strictly less than any expenditure approved in the prior fiscal year.",
+        "No neighboring jurisdictions have considered implementing similar regulatory policies.",
+        "The personnel tasked with enforcing the policy have completed postgraduate compliance degrees.",
+        "Public opinion surveys indicate universal consumer enthusiasm for the initiative."
+      ],
+      "answer": "A",
+      "explanation": "Negation test: If the policy DOES trigger untested late-stage toxicity that cancels out the expected gains, the goal of breakthrough drug availability will fail, collapsing the argument.",
+      "trap": "Focusing on administrative trivia (degree qualifications) or budget comparisons.",
+      "estSeconds": 115
+    },
+    {
+      "id": "pt04_v13",
+      "test": 4,
+      "section": "VERBAL",
+      "type": "CRITICAL_REASONING",
+      "subtopic": "Critical Reasoning",
+      "difficulty": "hard",
+      "difficultyScore": 8,
+      "stem": "Operations Analyst at Metropolitan Water Authority: \"A three-month pilot deployment of artesian reservoir recharge basin in region Alpha yielded a 25% improvement in recharge infiltration. This empirical result establishes that artesian reservoir recharge basin was the direct causal driver of the observed efficiency gain.\"\n\nWhich of the following, if true, most seriously undermines the analyst's causal conclusion?",
+      "options": [
+        "Test district Alpha simultaneously experienced a major external demographic shift that naturally produces high baseline performance.",
+        "The software utilized to compile test results was upgraded three weeks prior to the pilot rollout.",
+        "Several junior employees in district Alpha reported working five additional overtime hours during the pilot.",
+        "The cost of the pilot study was covered by a philanthropic research grant rather than operating revenue.",
+        "Competing firms in the same industry have not yet published their quarterly operational statistics."
+      ],
+      "answer": "A",
+      "explanation": "Introducing an external confounding variable (simultaneous demographic shift) directly attacks the causal attribution made by the consultant.",
+      "trap": "Pointing out that the pilot was grant-funded, which affects replication finances but not the validity of the pilot's causal data.",
+      "estSeconds": 110
+    },
+    {
+      "id": "pt04_v14",
+      "test": 4,
+      "section": "VERBAL",
+      "type": "CRITICAL_REASONING",
+      "subtopic": "Critical Reasoning",
+      "difficulty": "medium",
+      "difficultyScore": 7,
+      "stem": "Strategy Director at Metropolitan Water Authority: \"Allocating capital toward artesian reservoir recharge basin represents the most effective strategic pathway for our firm to expand recharge infiltration.\"\n\nWhich of the following, if true, provides the strongest corroborating evidence for the director's assertion?",
+      "options": [
+        "In extensive blind controlled trials across diverse industry segments, organizations adopting Accelerated Approval Pathways consistently outperformed control groups on breakthrough drug availability.",
+        "The strategic planner recently completed an executive leadership certification at an accredited business school.",
+        "The vendor supplying the hardware for the policy offers a 30-day money-back guarantee.",
+        "Several trade journals recently featured editorial articles discussing emerging regulatory trends.",
+        "The policy requires no alterations to the firm's existing corporate legal structure."
+      ],
+      "answer": "A",
+      "explanation": "Independent controlled trials demonstrating that the policy consistently beats control groups across diverse segments provides robust causal validation.",
+      "trap": "Relying on the planner's credentials (ad hominem support) rather than empirical evidence.",
+      "estSeconds": 100
+    },
+    {
+      "id": "pt04_v15",
+      "test": 4,
+      "section": "VERBAL",
+      "type": "CRITICAL_REASONING",
+      "subtopic": "Critical Reasoning",
+      "difficulty": "hard",
+      "difficultyScore": 9,
+      "stem": "Compliance Auditor: At Metropolitan Water Authority, any initiative involving artesian reservoir recharge basin requires formal sign-off from Water Resource Engineer. All initiatives receiving formal sign-off must undergo an environmental impact assessment unless they are classified as purely digital infrastructure. Last month, Initiative Sigma at Metropolitan Water Authority received formal sign-off but did not undergo an environmental impact assessment.\n\nIf the statements above are true, which of the following must also be true regarding Initiative Sigma?",
+      "options": [
+        "The first describes an impending regulatory proposal; the second introduces evidence that undermines an objection to that proposal.",
+        "The first is the main conclusion of the argument; the second is a premise offered in support of that conclusion.",
+        "The first is an assumption underlying the industry objection; the second is the analyst\u2019s primary thesis.",
+        "The first provides empirical evidence; the second states an intermediate conclusion rejected by the author.",
+        "The first introduces a claim the author accepts; the second defends a counter-argument."
+      ],
+      "answer": "A",
+      "explanation": "Boldface 1 describes the regulatory initiative being debated. Boldface 2 presents empirical compliance cost data that directly counters the lobbyists' objection.",
+      "trap": "Confusing Boldface 1 with the author's personal conclusion (which appears in the final sentence).",
+      "estSeconds": 125
+    },
+    {
+      "id": "pt04_v16",
+      "test": 4,
+      "section": "VERBAL",
+      "type": "CRITICAL_REASONING",
+      "subtopic": "Critical Reasoning",
+      "difficulty": "hard",
+      "difficultyScore": 8,
+      "stem": "Municipal Water Supervisor: To prevent artesian well contamination, the water board proposes encasing well casings in pressurized bentonite slurry. Which of the following is most essential to establish in assessing the plan?",
+      "options": [
+        "Whether the monetary benefits realized from breakthrough drug availability exceed the ongoing compliance and operational costs associated with Accelerated Approval Pathways.",
+        "Whether participating organizations display corporate logos on public transit shelters.",
+        "How many years the auditor has worked in the regional auditing bureau.",
+        "Whether similar policies were debated by legislative committees during the prior decade.",
+        "Whether employee satisfaction surveys are conducted semi-annually or annually."
+      ],
+      "answer": "A",
+      "explanation": "Net return on capital is defined as Net Financial Benefits minus Total Costs. Determining whether revenue gains exceed operational costs is decisive.",
+      "trap": "Choosing historical trivia or auditor tenure, which do not influence the mathematical financial return.",
+      "estSeconds": 110
+    },
+    {
+      "id": "pt04_v17",
+      "test": 4,
+      "section": "VERBAL",
+      "type": "CRITICAL_REASONING",
+      "subtopic": "Critical Reasoning",
+      "difficulty": "medium",
+      "difficultyScore": 7,
+      "stem": "Environmental Historian: Early ecologists claimed that arid basin water depletion was caused exclusively by industrial livestock grazing. **Archival irrigation records show that deep artesian well pumping expanded agricultural water consumption by 300%.** Ranching lobbyists blame seasonal droughts. Yet hydrological models confirm that groundwater extraction far exceeded natural recharge; **deep well irrigation was the primary demographic driver of aquifer exhaustion.** What roles do the boldface portions play?",
+      "options": [
+        "Rapid organic growth in commercial activity created new baseline volume that would have severely degraded performance in the absence of the subsidies.",
+        "The currency in which subsidies were disbursed remained stable on international currency exchange markets.",
+        "Several administrative assistants retired during the middle of the fiscal quarter.",
+        "The auditing agency used computerized spreadsheets rather than handwritten paper ledgers.",
+        "The subsidies were announced during a nationally televised press conference."
+      ],
+      "answer": "A",
+      "explanation": "A powerful counteracting upward pressure (organic commercial growth) would have caused a steep deterioration; the policy succeeded in keeping metrics flat against a worsening baseline.",
+      "trap": "Focusing on accounting ledger format (option D), which explains no operational dynamics.",
+      "estSeconds": 105
+    },
+    {
+      "id": "pt04_v18",
+      "test": 4,
+      "section": "VERBAL",
+      "type": "CRITICAL_REASONING",
+      "subtopic": "Critical Reasoning",
+      "difficulty": "hard",
+      "difficultyScore": 8,
+      "stem": "Safety Officer at Metropolitan Water Authority: Over the past three quarters, Metropolitan Water Authority equipped 90% of all artesian reservoir recharge basin units with automated proximity sensors. Yet despite this safety upgrade, reported workplace minor incident rates in civil hydrology & aquifer management increased by 14% over the same timeframe.\n\nWhich of the following, if true, most helps to resolve the apparent discrepancy described above?",
+      "options": [
+        "Mistakes a necessary condition for a sufficient condition.",
+        "Attacks the personal moral character of corporate executives.",
+        "Relies on circular logic by defining performance as adoption of the policy.",
+        "Fails to specify the exact percentage return of the market index.",
+        "Assumes that corporate profitability is the sole measure of human happiness."
+      ],
+      "answer": "A",
+      "explanation": "The premise shows that adopting the policy may be necessary to avoid failure, but that does not mean adoption is sufficient to guarantee market outperformance.",
+      "trap": "Selecting option C (circular logic) when the formal flaw is affirming the consequent / confusing necessary and sufficient conditions.",
+      "estSeconds": 115
+    },
+    {
+      "id": "pt04_v19",
+      "test": 4,
+      "section": "VERBAL",
+      "type": "CRITICAL_REASONING",
+      "subtopic": "Critical Reasoning",
+      "difficulty": "hard",
+      "difficultyScore": 8,
+      "stem": "Water Utility Manager: Every municipality that rated our reservoir services 'excellent' utilized our digital monitoring tools at least three times per month. Municipalities with fewer logins gave lower ratings. Therefore, to improve customer satisfaction, we should require three logins monthly. The manager's argument is vulnerable because it:",
+      "options": [
+        "Some facilities in Province 4 are NOT tier-1 manufacturing facilities.",
+        "All facilities in Province 4 maintain ISO-14001 certification.",
+        "No tier-1 manufacturing facility is located in Province 4.",
+        "Every facility that lacks ISO-14001 certification operates uncalibrated combustion chambers.",
+        "Province 4 has the highest industrial energy consumption in the nation."
+      ],
+      "answer": "A",
+      "explanation": "There exist facilities in Province X with uncalibrated chambers. None of these can have ISO-14001 certification (by statement 2). Since all tier-1 facilities must have ISO-14001 certification, these uncertified facilities in Province X cannot be tier-1 facilities.",
+      "trap": "Concluding that NO tier-1 facilities exist in Province X (option C), which oversteps the premises.",
+      "estSeconds": 110
+    },
+    {
+      "id": "pt04_v20",
+      "test": 4,
+      "section": "VERBAL",
+      "type": "CRITICAL_REASONING",
+      "subtopic": "Critical Reasoning",
+      "difficulty": "hard",
+      "difficultyScore": 8,
+      "stem": "Civil Drainage Engineer: The municipal board plans to construct permeable asphalt roadways to reduce urban storm runoff into artesian aquifers. Critics argue winter frost heave damages porous asphalt. However, synthetic polymer additives increase asphalt compressive strength by 40%. Which of the following provides the strongest support for the plan?",
+      "options": [
+        "Concurrently with the predator removal, the reserve experienced a massive cyclical emergence of nutrient-rich prey that provided unprecedented food abundance.",
+        "Target species construct nests in deciduous trees as well as evergreen shrubs.",
+        "Invasive predators were introduced to the continent by European settlers in the eighteenth century.",
+        "Volunteers conducted population counts using standard 10x binoculars.",
+        "Several nearby urban parks also have small populations of the same species."
+      ],
+      "answer": "A",
+      "explanation": "The simultaneous explosion of nutrient-rich cicada prey provides an overwhelming alternative causal explanation for the surge in reproduction.",
+      "trap": "Noting the historical origins of predators, which is irrelevant to current breeding dynamics.",
+      "estSeconds": 115
+    },
+    {
+      "id": "pt04_v21",
+      "test": 4,
+      "section": "VERBAL",
+      "type": "CRITICAL_REASONING",
+      "subtopic": "Critical Reasoning",
+      "difficulty": "medium",
+      "difficultyScore": 7,
+      "stem": "Water District Chief: Last quarter, our patrol doubled flow meter inspections on irrigation canals in district Alpha, and reported water thefts declined by 40%. This proves that doubling meter inspections should be enacted across all water districts. Which of the following most seriously undermines the chief's conclusion?",
+      "options": [
+        "The patient case mix and medical complexity in Ward 4 are representative of clinical departments across the entire hospital system.",
+        "The platform software runs on standard desktop workstations running Windows 11.",
+        "Physicians in Ward 4 completed an online feedback survey regarding user satisfaction.",
+        "The hospital's malpractice insurance premium is reviewed annually in November.",
+        "Medical transcriptionists previously belonged to a regional healthcare labor union."
+      ],
+      "answer": "A",
+      "explanation": "Confirming that the test clinic is representative demonstrates that the 40% error reduction will likely replicate across other hospital departments.",
+      "trap": "Citing IT workstation compatibility (option B), which is convenient but does not prove clinical effectiveness.",
+      "estSeconds": 100
+    },
+    {
+      "id": "pt04_v22",
+      "test": 4,
+      "section": "VERBAL",
+      "type": "CRITICAL_REASONING",
+      "subtopic": "Critical Reasoning",
+      "difficulty": "hard",
+      "difficultyScore": 9,
+      "stem": "River Basin Hydrologist: To protect endangered river turtles in basin Alpha, rangers constructed wire mesh screens over sandbank nesting sites to deter predatory raccoons. Conservationists project the juvenile turtle population will expand. Which of the following is an assumption required by the projection?",
+      "options": [
+        "The public subway system possesses sufficient train capacity to accommodate the surge of diverted commuters without causing severe overcrowding that deters ridership.",
+        "All private automobile drivers earn incomes above the national median household threshold.",
+        "City parking meters generate less revenue than public transit fareboxes.",
+        "Bicycle sharing programs will experience a corresponding increase in ridership.",
+        "Municipal road paving projects are financed through state gasoline excise taxes."
+      ],
+      "answer": "A",
+      "explanation": "Negation test: If the subway lacks capacity and overcrowding becomes unmanageable, drivers will not switch to transit (they may carpool, detour, or telecommute), defeating the policy.",
+      "trap": "Assuming all drivers have high incomes (option B), which is not logically required.",
+      "estSeconds": 120
+    },
+    {
+      "id": "pt04_v23",
+      "test": 4,
+      "section": "VERBAL",
+      "type": "CRITICAL_REASONING",
+      "subtopic": "Critical Reasoning",
+      "difficulty": "hard",
+      "difficultyScore": 9,
+      "stem": "Hydrology Analyst: Critics frequently charge that metropolitan water district Alpha achieved water conservation targets solely by doubling residential water tariffs. **However, neighboring municipal districts that enacted identical tariff increases saw residential consumption remain unchanged.** Clearly, pricing tariffs were not the primary cause. Rather, **district Alpha's smart acoustic leak detection sensors and automated pressure-reducing valves eliminated distribution pipe losses that other districts ignored.** What roles do the boldface portions play?",
+      "options": [
+        "The first is an established claim that the argument aims to refute; the second is an observation that supports the author\u2019s alternative conclusion.",
+        "The first is the main conclusion of the argument; the second is a premise offered to defend that conclusion.",
+        "The first provides empirical evidence; the second states an intermediate hypothesis rejected by the author.",
+        "The first is a prediction; the second is an observation that disproves that prediction.",
+        "The first introduces a hypothesis; the second proves that coal adoption never occurred."
+      ],
+      "answer": "A",
+      "explanation": "Boldface 1 presents the conventional orthodoxy that the author sets out to undermine. Boldface 2 describes the persistent water-power cost advantage that supports the author's alternative thesis.",
+      "trap": "Selecting option B which confuses the introductory conventional view with the author's own main conclusion.",
+      "estSeconds": 120
+    },
+    {
+      "id": "pt04_di01",
+      "test": 4,
+      "section": "DATA_INSIGHTS",
+      "type": "DATA_SUFFICIENCY",
+      "subtopic": "Data Sufficiency",
+      "difficulty": "medium",
+      "difficultyScore": 7,
+      "stem": "In a data transmission pipeline for agricultural agronomy & hydrology, if $k$ is a positive integer, is $k$ divisible by 12?\n\n(1) $k$ is divisible by 6 and $k$ is even.\n(2) $k^2$ is divisible by 144.",
+      "options": [
+        "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+        "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+        "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+        "EACH statement ALONE is sufficient.",
+        "Statements (1) and (2) TOGETHER are NOT sufficient."
+      ],
+      "answer": "D",
+      "explanation": "Statement (1): Since $k$ is even (divisible by 2) and divisible by 6, and $\\text{LCM}(2, 6) = 12$, $k$ must be divisible by 12. Sufficient.\nStatement (2): If $k^2$ is divisible by 144, then for positive integer $k$, $\\sqrt{k^2} = k$ is divisible by 12. Sufficient.\nTherefore, EACH statement ALONE is sufficient.",
+      "trap": "Believing statement (2) allows fractional roots when $k$ is explicitly constrained to be an integer.",
+      "estSeconds": 95
+    },
+    {
+      "id": "pt04_di02",
+      "test": 4,
+      "section": "DATA_INSIGHTS",
+      "type": "DATA_SUFFICIENCY",
+      "subtopic": "Data Sufficiency",
+      "difficulty": "hard",
+      "difficultyScore": 8,
+      "stem": "If $a$ and $b$ are non-zero real parameters measuring recharge infiltration at Metropolitan Water Authority, is $\\frac{a}{b} > 1$?\n\n(1) $a > b$\n(2) $a b > 0$",
+      "options": [
+        "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+        "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+        "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+        "EACH statement ALONE is sufficient.",
+        "Statements (1) and (2) TOGETHER are NOT sufficient."
+      ],
+      "answer": "E",
+      "explanation": "Statement (1): If $x = 2, y = 1$, $x/y = 2 > 1$. If $x = -1, y = -2$, $x > y$ holds but $x/y = 1/2 < 1$. Insufficient.\nStatement (2): Tells us $x$ and $y$ have the same sign, but gives no relative magnitude. Insufficient.\nTogether: If $x=2, y=1$, $x/y=2 > 1$. If $x=-1, y=-2$, $x>y$ and $xy=2>0$ hold, but $x/y=0.5 < 1$. Two contradictory answers remain possible. Statements (1) and (2) together are NOT sufficient (Answer E).",
+      "trap": "Assuming $x$ and $y$ must be positive without testing negative numbers.",
+      "estSeconds": 110
+    },
+    {
+      "id": "pt04_di03",
+      "test": 4,
+      "section": "DATA_INSIGHTS",
+      "type": "DATA_SUFFICIENCY",
+      "subtopic": "Data Sufficiency",
+      "difficulty": "medium",
+      "difficultyScore": 7,
+      "stem": "Working at constant rates, how many hours does it take for Module A and Module B in agricultural agronomy & hydrology working together to process 4500 data transactions?\n\n(1) Module A processes 1800 transactions in 2 hours.\n(2) Operating simultaneously, Module A and Module B process 2250 transactions in 2.5 hours.",
+      "options": [
+        "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+        "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+        "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+        "EACH statement ALONE is sufficient.",
+        "Statements (1) and (2) TOGETHER are NOT sufficient."
+      ],
+      "answer": "B",
+      "explanation": "Statement (1) provides only the rate for Module A. Insufficient.\nStatement (2) provides the combined throughput rate directly: Rate $= \\text{Transactions} / \\text{Time}$. With the combined rate known, the time to complete the target volume is uniquely determined. Sufficient.",
+      "trap": "Believing individual rates for both modules are required.",
+      "estSeconds": 90
+    },
+    {
+      "id": "pt04_di04",
+      "test": 4,
+      "section": "DATA_INSIGHTS",
+      "type": "DATA_SUFFICIENCY",
+      "subtopic": "Data Sufficiency",
+      "difficulty": "hard",
+      "difficultyScore": 8,
+      "stem": "In a sample $S$ of 5 distinct integers recorded during agricultural agronomy & hydrology testing, is the mean of $S$ greater than the median of $S$?\n\n(1) The 3 smallest integers are 1, 3, and 6.\n(2) The largest integer in $S$ is 50.",
+      "options": [
+        "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+        "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+        "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+        "EACH statement ALONE is sufficient.",
+        "Statements (1) and (2) TOGETHER are NOT sufficient."
+      ],
+      "answer": "C",
+      "explanation": "Statement (1): Median is 6. Upper values could be 7, 8 (mean = 5 < 6) or 7, 50 (mean > 6). Insufficient.\nStatement (2): Gives no information about median or lower values. Insufficient.\nTogether: Elements are $1, 3, 6, d, {35 + test_idx * 5}$ where $6 < d < {35 + test_idx * 5}$. Minimum sum is $1 + 3 + 6 + 7 + {35 + test_idx * 5} = {52 + test_idx * 5}$. Minimum mean is $({52 + test_idx * 5})/5 > 10 > 6$. Since the minimum possible mean is strictly greater than the median 6, the answer is always YES. Sufficient.",
+      "trap": "Neglecting to calculate the minimum possible mean under the constraint $d \\ge 7$.",
+      "estSeconds: 115": 115,
+      "estSeconds": 115
+    },
+    {
+      "id": "pt04_di05",
+      "test": 4,
+      "section": "DATA_INSIGHTS",
+      "type": "DATA_SUFFICIENCY",
+      "subtopic": "Data Sufficiency",
+      "difficulty": "medium",
+      "difficultyScore": 6,
+      "stem": "Did Metropolitan Water Authority's division for civil hydrology & aquifer management generate an operating net margin of at least $\\$40,000$ on total contract billings of $\\$210,000$?\n\n(1) Total operating expenses were strictly under 65% of contract billings.\n(2) Operating margin exceeded 20% of contract billings.",
+      "options": [
+        "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+        "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+        "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+        "EACH statement ALONE is sufficient.",
+        "Statements (1) and (2) TOGETHER are NOT sufficient."
+      ],
+      "answer": "A",
+      "explanation": "Profit = Revenue - Costs. Statement (1): If costs < 65% of revenue, profit > 35% of revenue. 35% of $\\$195,000$ is at least $\\$68,250$, which is strictly greater than $\\$40,000$. Sufficient.\nStatement (2): 20% of $\\$195,000$ is $\\$39,000$. For smaller revenues, 20% might be $\\$30,000$ or $\\$36,000$ (which could allow profit to be $\\$38,000 < \\$40,000$). Thus Statement (2) is not guaranteed sufficient across baseline tests. Statement (1) ALONE is sufficient.",
+      "trap": "Assuming statement (2) guarantees clearing $\\$40,000$ without calculating the 20% threshold.",
+      "estSeconds": 95
+    },
+    {
+      "id": "pt04_di06",
+      "test": 4,
+      "section": "DATA_INSIGHTS",
+      "type": "DATA_SUFFICIENCY",
+      "subtopic": "Data Sufficiency",
+      "difficulty": "hard",
+      "difficultyScore": 9,
+      "stem": "If parameter $p$ is an integer recorded during groundwater infiltration monitoring on artesian reservoir recharge basin at Metropolitan Water Authority, is $|p| = p$?\n\n(1) $p^2 = p$\n(2) $p^3 \\ge p$",
+      "options": [
+        "Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+        "Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+        "BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+        "EACH statement ALONE is sufficient.",
+        "Statements (1) and (2) TOGETHER are NOT sufficient."
+      ],
+      "answer": "A",
+      "explanation": "$|m| = m$ holds if and only if $m \\ge 0$.\nStatement (1): $m(m - 1) = 0 \\implies m = 0$ or $m = 1$. In both cases, $m \\ge 0$, so $|m| = m$ is definitely true. Sufficient.\nStatement (2): $m^3 - m \\ge 0 \\implies m(m-1)(m+1) \\ge 0$. Integer solutions include $m = -1$ (where $|-1| = 1 \\ne -1$, so NO) as well as $m = 0, 1, 2$ (where YES). Insufficient.\nTherefore, Statement (1) ALONE is sufficient.",
+      "trap": "Overlooking $m = -1$ as a valid integer solution to $m^3 \\ge m$.",
+      "estSeconds": 105
+    },
+    {
+      "id": "pt04_di07",
+      "test": 4,
+      "section": "DATA_INSIGHTS",
+      "type": "TABLE_ANALYSIS",
+      "subtopic": "Table Analysis",
+      "difficulty": "medium",
+      "difficultyScore": 7,
+      "stem": "Looking at the municipal water utility table, which regional drainage division achieved the highest operating profit in dollars?",
+      "dataSource": {
+        "title": "Performance Matrix: 6 Operational Units in Agricultural Agronomy & Hydrology",
+        "headers": [
+          "Unit Identifier",
+          "Throughput (k/day)",
+          "Error Rate (%)",
+          "Uptime (%)",
+          "Cost Index"
+        ],
+        "rows": [
+          [
+            "Unit Alpha-4",
+            54,
+            0.4,
+            99.8,
+            110
+          ],
+          [
+            "Unit Beta-4",
+            74,
+            1.2,
+            98.4,
+            145
+          ],
+          [
+            "Unit Gamma-4",
+            44,
+            0.2,
+            99.9,
+            85
+          ],
+          [
+            "Unit Delta-4",
+            90,
+            2.1,
+            97.5,
+            180
+          ],
+          [
+            "Unit Epsilon-4",
+            63,
+            0.8,
+            99.1,
+            125
+          ],
+          [
+            "Unit Zeta-4",
+            57,
+            0.6,
+            99.4,
+            115
+          ]
+        ]
+      },
+      "options": [
+        "Statement 1: The median throughput among units with an Error Rate strictly under 1.0% exceeds 45 k/day. (Yes/No)",
+        "Statement 2: The unit with the highest Cost Index also has the highest Error Rate. (Yes/No)",
+        "Statement 3: All units with Uptime greater than 99.0% have a Cost Index below 150. (Yes/No)"
+      ],
+      "answer": "Yes | Yes | Yes",
+      "explanation": "Statement 1: Units with error < 1.0% are Alpha, Gamma, Epsilon, Zeta. Throughputs are 45+, 38+, 54+, 48+. Median is (45+48)/2 > 45 k/day -> Yes.\nStatement 2: Unit Delta has Cost Index 180 (highest) and Error Rate 2.1% (highest) -> Yes.\nStatement 3: Units with Uptime > 99.0% are Alpha (110), Gamma (85), Epsilon (125), Zeta (115), all under 150 -> Yes.",
+      "trap": "Sorting by the wrong column or taking the mean instead of the median.",
+      "estSeconds": 120
+    },
+    {
+      "id": "pt04_di08",
+      "test": 4,
+      "section": "DATA_INSIGHTS",
+      "type": "TABLE_ANALYSIS",
+      "subtopic": "Table Analysis",
+      "difficulty": "medium",
+      "difficultyScore": 7,
+      "stem": "Evaluate operational ranking correlations based on the agricultural agronomy & hydrology table.",
+      "dataSource": {
+        "title": "Performance Matrix: 6 Operational Units in Agricultural Agronomy & Hydrology",
+        "headers": [
+          "Unit Identifier",
+          "Throughput (k/day)",
+          "Error Rate (%)",
+          "Uptime (%)",
+          "Cost Index"
+        ],
+        "rows": [
+          [
+            "Unit Alpha-4",
+            54,
+            0.4,
+            99.8,
+            110
+          ],
+          [
+            "Unit Beta-4",
+            74,
+            1.2,
+            98.4,
+            145
+          ],
+          [
+            "Unit Gamma-4",
+            44,
+            0.2,
+            99.9,
+            85
+          ],
+          [
+            "Unit Delta-4",
+            90,
+            2.1,
+            97.5,
+            180
+          ],
+          [
+            "Unit Epsilon-4",
+            63,
+            0.8,
+            99.1,
+            125
+          ],
+          [
+            "Unit Zeta-4",
+            57,
+            0.6,
+            99.4,
+            115
+          ]
+        ]
+      },
+      "options": [
+        "Statement 1: Sorting descending by Throughput yields an identical ranking as sorting descending by Cost Index. (Yes/No)",
+        "Statement 2: Exactly three units have an Error Rate strictly below 0.7%. (Yes/No)",
+        "Statement 3: Unit Gamma has both the lowest Throughput and the lowest Error Rate. (Yes/No)"
+      ],
+      "answer": "No | Yes | Yes",
+      "explanation": "Statement 1: Delta is highest in both, but Beta (62, 145) vs Epsilon (54, 125) vs Alpha (45, 110) vs Zeta (48, 115) - Zeta throughput is higher than Alpha but Cost Index is 115 vs 110, order varies -> No.\nStatement 2: Units with error < 0.7% are Alpha (0.4), Gamma (0.2), Zeta (0.6) -> exactly three -> Yes.\nStatement 3: Gamma has lowest throughput (38+) and lowest error (0.2%) -> Yes.",
+      "trap": "Assuming throughput and cost index correlate with 1.0 rank correlation.",
+      "estSeconds": 115
+    },
+    {
+      "id": "pt04_di09",
+      "test": 4,
+      "section": "DATA_INSIGHTS",
+      "type": "TABLE_ANALYSIS",
+      "subtopic": "Table Analysis",
+      "difficulty": "hard",
+      "difficultyScore": 8,
+      "stem": "If the municipal water division table is sorted from lowest to highest Operating Margin (%), which division occupies the median position?",
+      "dataSource": {
+        "title": "Performance Matrix: 6 Operational Units in Agricultural Agronomy & Hydrology",
+        "headers": [
+          "Unit Identifier",
+          "Throughput (k/day)",
+          "Error Rate (%)",
+          "Uptime (%)",
+          "Cost Index"
+        ],
+        "rows": [
+          [
+            "Unit Alpha-4",
+            54,
+            0.4,
+            99.8,
+            110
+          ],
+          [
+            "Unit Beta-4",
+            74,
+            1.2,
+            98.4,
+            145
+          ],
+          [
+            "Unit Gamma-4",
+            44,
+            0.2,
+            99.9,
+            85
+          ],
+          [
+            "Unit Delta-4",
+            90,
+            2.1,
+            97.5,
+            180
+          ],
+          [
+            "Unit Epsilon-4",
+            63,
+            0.8,
+            99.1,
+            125
+          ],
+          [
+            "Unit Zeta-4",
+            57,
+            0.6,
+            99.4,
+            115
+          ]
+        ]
+      },
+      "options": [
+        "Statement 1: Unit Gamma has a Cost Index per throughput unit of less than 2.5. (Yes/No)",
+        "Statement 2: The range of Error Rates across all 6 units is strictly greater than 1.8 percentage points. (Yes/No)",
+        "Statement 3: More than half of the units have an Uptime exceeding 99.2%. (Yes/No)"
+      ],
+      "answer": "Yes | Yes | No",
+      "explanation": "Statement 1: Gamma ratio = 85 / (38+) < 2.5 -> Yes.\nStatement 2: Max error = Delta (2.1%), Min error = Gamma (0.2%). Range = 2.1 - 0.2 = 1.9% > 1.8% -> Yes.\nStatement 3: Units with Uptime > 99.2% are Alpha (99.8), Gamma (99.9), Zeta (99.4) -> 3 out of 6 (wait: exactly half, so strictly more than half is No!) -> Answer: Yes | Yes | No.",
+      "trap": "Confusing 'at least half' with 'strictly more than half'.",
+      "estSeconds": 125
+    },
+    {
+      "id": "pt04_di10",
+      "test": 4,
+      "section": "DATA_INSIGHTS",
+      "type": "TABLE_ANALYSIS",
+      "subtopic": "Table Analysis",
+      "difficulty": "hard",
+      "difficultyScore": 8,
+      "stem": "Evaluate reliability and risk profiles across units in agricultural agronomy & hydrology.",
+      "dataSource": {
+        "title": "Performance Matrix: 6 Operational Units in Agricultural Agronomy & Hydrology",
+        "headers": [
+          "Unit Identifier",
+          "Throughput (k/day)",
+          "Error Rate (%)",
+          "Uptime (%)",
+          "Cost Index"
+        ],
+        "rows": [
+          [
+            "Unit Alpha-4",
+            54,
+            0.4,
+            99.8,
+            110
+          ],
+          [
+            "Unit Beta-4",
+            74,
+            1.2,
+            98.4,
+            145
+          ],
+          [
+            "Unit Gamma-4",
+            44,
+            0.2,
+            99.9,
+            85
+          ],
+          [
+            "Unit Delta-4",
+            90,
+            2.1,
+            97.5,
+            180
+          ],
+          [
+            "Unit Epsilon-4",
+            63,
+            0.8,
+            99.1,
+            125
+          ],
+          [
+            "Unit Zeta-4",
+            57,
+            0.6,
+            99.4,
+            115
+          ]
+        ]
+      },
+      "options": [
+        "Statement 1: The unit with the highest Throughput also has the lowest Uptime. (Yes/No)",
+        "Statement 2: Total combined throughput of the two highest units exceeds 130 k/day. (Yes/No)",
+        "Statement 3: Every unit with a Cost Index greater than 120 has an Error Rate above 1.0%. (Yes/No)"
+      ],
+      "answer": "Yes | Yes | No",
+      "explanation": "Statement 1: Delta has highest throughput (75+) and lowest uptime (97.5%) -> Yes.\nStatement 2: Top two are Delta (75+) and Beta (62+) = 137+ > 130 -> Yes.\nStatement 3: Unit Epsilon has Cost Index 125 (>120) but Error Rate 0.8% (< 1.0%) -> No.",
+      "trap": "Overlooking Unit Epsilon's low error rate despite high cost.",
+      "estSeconds": 115
+    },
+    {
+      "id": "pt04_di11",
+      "test": 4,
+      "section": "DATA_INSIGHTS",
+      "type": "GRAPHICS_INTERPRETATION",
+      "subtopic": "Graphics Interpretation",
+      "difficulty": "medium",
+      "difficultyScore": 7,
+      "stem": "Referring to the civil hydrology scatter plot of aquifer R&D versus operational efficiency, as research investment increases up to 10%, efficiency generally [Select 1], while past 10%, it generally [Select 2].",
+      "dataSource": {
+        "title": "Efficiency Curve: Resource Investment vs Productivity Output in Agricultural Agronomy & Hydrology",
+        "type": "scatter_trend",
+        "points": [
+          {
+            "x": 10,
+            "y": 26
+          },
+          {
+            "x": 20,
+            "y": 41
+          },
+          {
+            "x": 30,
+            "y": 54
+          },
+          {
+            "x": 40,
+            "y": 64
+          },
+          {
+            "x": 50,
+            "y": 71
+          },
+          {
+            "x": 60,
+            "y": 76
+          }
+        ]
+      },
+      "options": [
+        "Dropdown 1: The overall relationship between Resource Investment and Productivity Output is [strongly positive | strongly negative | sinusoidal | uncorrelated].",
+        "Dropdown 2: As Resource Investment increases beyond $40k, the rate of increase in Productivity Output displays [diminishing marginal returns | increasing exponential growth | negative acceleration | zero slope]."
+      ],
+      "answer": "strongly positive | diminishing marginal returns",
+      "explanation": "Dropdown 1: As investment rises from 10 to 60, output rises consistently from 20+ to 70+ -> strongly positive.\nDropdown 2: Between 10 and 30, slope is ~1.4; between 40 and 60, slope drops to ~0.6 -> diminishing marginal returns.",
+      "trap": "Confusing diminishing marginal growth with an absolute decline in output.",
+      "estSeconds": 105
+    },
+    {
+      "id": "pt04_di12",
+      "test": 4,
+      "section": "DATA_INSIGHTS",
+      "type": "GRAPHICS_INTERPRETATION",
+      "subtopic": "Graphics Interpretation",
+      "difficulty": "medium",
+      "difficultyScore": 7,
+      "stem": "Referring to the municipal hydrology plot, approximately what percentage of water pumping stations with R&D intensity below 6% attained an ROIC above 20%?",
+      "dataSource": {
+        "title": "Efficiency Curve: Resource Investment vs Productivity Output in Agricultural Agronomy & Hydrology",
+        "type": "scatter_trend",
+        "points": [
+          {
+            "x": 10,
+            "y": 26
+          },
+          {
+            "x": 20,
+            "y": 41
+          },
+          {
+            "x": 30,
+            "y": 54
+          },
+          {
+            "x": 40,
+            "y": 64
+          },
+          {
+            "x": 50,
+            "y": 71
+          },
+          {
+            "x": 60,
+            "y": 76
+          }
+        ]
+      },
+      "options": [
+        "Dropdown 1: The average marginal gain in output per thousand dollars invested between $10k and $30k is approximately [1.4 points/$k | 2.5 points/$k | 3.5 points/$k | 0.5 points/$k].",
+        "Dropdown 2: The point with the highest output-to-investment ratio is at an investment of [$10k | $30k | $50k | $60k]."
+      ],
+      "answer": "1.4 points/$k | $10k",
+      "explanation": "Dropdown 1: Slope = (48 - 20) / (30 - 10) = 28 / 20 = 1.4 points/$k.\nDropdown 2: Ratio y/x: At x=10, y/x = 22/10 = 2.2. At x=60, y/x = 72/60 = 1.2. The highest ratio occurs at the earliest stage ($10k).",
+      "trap": "Assuming the highest absolute output point ($60k) has the highest efficiency ratio.",
+      "estSeconds": 115
+    },
+    {
+      "id": "pt04_di13",
+      "test": 4,
+      "section": "DATA_INSIGHTS",
+      "type": "GRAPHICS_INTERPRETATION",
+      "subtopic": "Graphics Interpretation",
+      "difficulty": "hard",
+      "difficultyScore": 8,
+      "stem": "Referring to the municipal water chart, the single artesian pumping station identified as the greatest positive residual outlier is located at which coordinates?",
+      "dataSource": {
+        "title": "Efficiency Curve: Resource Investment vs Productivity Output in Agricultural Agronomy & Hydrology",
+        "type": "scatter_trend",
+        "points": [
+          {
+            "x": 10,
+            "y": 26
+          },
+          {
+            "x": 20,
+            "y": 41
+          },
+          {
+            "x": 30,
+            "y": 54
+          },
+          {
+            "x": 40,
+            "y": 64
+          },
+          {
+            "x": 50,
+            "y": 71
+          },
+          {
+            "x": 60,
+            "y": 76
+          }
+        ]
+      },
+      "options": [
+        "Dropdown 1: The median investment level across the 6 observed data points is [$35k | $40k | $45k | $50k].",
+        "Dropdown 2: A firm investing $45k would be projected by linear interpolation to produce an output index of approximately [61.5 | 68.0 | 72.5 | 55.0]."
+      ],
+      "answer": "$35k | 61.5",
+      "explanation": "Dropdown 1: Ordered x: 10, 20, 30, 40, 50, 60. Median = (30 + 40)/2 = $35k.\nDropdown 2: Between x=40 (y~58) and x=50 (y~65), midpoint x=45 gives y = (58 + 65)/2 = 61.5.",
+      "trap": "Extrapolating using the steep slope from the early segment.",
+      "estSeconds": 110
+    },
+    {
+      "id": "pt04_di14",
+      "test": 4,
+      "section": "DATA_INSIGHTS",
+      "type": "GRAPHICS_INTERPRETATION",
+      "subtopic": "Graphics Interpretation",
+      "difficulty": "hard",
+      "difficultyScore": 8,
+      "stem": "If an operating facility at Metropolitan Water Authority reduces its expenditure from 16% down to 10% along the regression curve for recharge infiltration, what is the expected change in its performance index?",
+      "dataSource": {
+        "title": "Efficiency Curve: Resource Investment vs Productivity Output in Agricultural Agronomy & Hydrology",
+        "type": "scatter_trend",
+        "points": [
+          {
+            "x": 10,
+            "y": 26
+          },
+          {
+            "x": 20,
+            "y": 41
+          },
+          {
+            "x": 30,
+            "y": 54
+          },
+          {
+            "x": 40,
+            "y": 64
+          },
+          {
+            "x": 50,
+            "y": 71
+          },
+          {
+            "x": 60,
+            "y": 76
+          }
+        ]
+      },
+      "options": [
+        "Dropdown 1: Increasing investment from $50k to $60k yields a percentage increase in output of approximately [7% | 15% | 25% | 35%].",
+        "Dropdown 2: If fixed costs require an output index of at least 50 to break even, the minimum necessary investment is approximately [$32k | $22k | $42k | $15k]."
+      ],
+      "answer": "7% | $32k",
+      "explanation": "Dropdown 1: At x=50, y~67. At x=60, y~72. Change = 5 / 67 ~ 7.4%.\nDropdown 2: At x=30, y~48; at x=40, y~58. Output 50 is reached just past $30k (approx $32k).",
+      "trap": "Calculating percentage increase based on investment (20%) instead of output (7%).",
+      "estSeconds": 115
+    },
+    {
+      "id": "pt04_di15",
+      "test": 4,
+      "section": "DATA_INSIGHTS",
+      "type": "TWO_PART_ANALYSIS",
+      "subtopic": "Two-Part Analysis",
+      "difficulty": "hard",
+      "difficultyScore": 8,
+      "stem": "At Metropolitan Water Authority, a capital allocation of $45 million is split between artesian reservoir recharge basin (Asset X) and secondary infrastructure (Asset Y). The allocation to Asset X is exactly 4 times the allocation to Asset Y. Select the dollar allocation for Asset X and Asset Y.\n\nValues: Asset X = $36M, Asset Y = $9M.",
+      "options": [
+        "Grade A: 46 liters",
+        "Grade B: 23 liters"
+      ],
+      "answer": "Grade A = 46 | Grade B = 23",
+      "explanation": "Alligation: Ratio of Grade A to Grade B is $|50 - 30| : |30 - 20| = 20 : 10 = 2 : 1$. Total volume is 69 liters. Grade A $= 2/3 \\times 69 = 46$ liters, Grade B $= 1/3 \\times 69 = 23$ liters.",
+      "trap": "Reversing the 2:1 ratio between Grade A and Grade B.",
+      "estSeconds": 125
+    },
+    {
+      "id": "pt04_di16",
+      "test": 4,
+      "section": "DATA_INSIGHTS",
+      "type": "TWO_PART_ANALYSIS",
+      "subtopic": "Two-Part Analysis",
+      "difficulty": "hard",
+      "difficultyScore": 9,
+      "stem": "Two parameters $U$ and $V$ in agricultural agronomy & hydrology satisfy the linear system: $2U + 3V = 43$ and $U - V = 4$.\n\nSelect the value of $U$ and the value of $V$ that satisfy both equations.",
+      "options": [
+        "U: 11",
+        "V: 7"
+      ],
+      "answer": "U = 11 | V = 7",
+      "explanation": "Substitute $U = V + 4$: $2(V + 4) + 3V = 5V + 8 = 43 \\implies 5V = 35 \\implies V = 7$. Then $U = 7 + 4 = 11$.",
+      "trap": "Sign error when expanding 2(V + 4).",
+      "estSeconds: 105": 105,
+      "estSeconds": 105
+    },
+    {
+      "id": "pt04_di17",
+      "test": 4,
+      "section": "DATA_INSIGHTS",
+      "type": "TWO_PART_ANALYSIS",
+      "subtopic": "Two-Part Analysis",
+      "difficulty": "hard",
+      "difficultyScore": 9,
+      "stem": "At Metropolitan Water Authority, Pump Alpha fills an emergency containment reservoir for groundwater infiltration monitoring in 10 hours working alone. Working together, Pump Alpha and Pump Beta fill the reservoir in 6.0 hours. Select the time for Pump Alpha and Pump Beta working alone.",
+      "options": [
+        "High-Yield Debt: \\$400,000",
+        "Treasury Notes: \\$600,000"
+      ],
+      "answer": "High-Yield = $400,000 | Treasury = $600,000",
+      "explanation": "Alligation: Ratio of High-Yield to Treasury is $|3 - 5| : |8 - 5| = 2 : 3$. Fraction in High-Yield is $2/5 = 40\\% = \\$400,000$. Fraction in Treasury is $3/5 = 60\\% = \\$600,000$.",
+      "trap": "Inverting the 2:3 ratio to 3:2.",
+      "estSeconds": 120
+    },
+    {
+      "id": "pt04_di18",
+      "test": 4,
+      "section": "DATA_INSIGHTS",
+      "type": "MULTI_SOURCE_REASONING",
+      "subtopic": "Multi-Source Reasoning",
+      "difficulty": "medium",
+      "difficultyScore": 7,
+      "stem": "Evaluating the Project Charter and Financial Audit tabs for Metropolitan Water Authority, what is the total upfront capital investment required for deploying artesian reservoir recharge basin across all branch facilities?",
+      "dataSource": {
+        "tabs": [
+          {
+            "tabId": "tab1",
+            "title": "Regulatory Directive: Agricultural Agronomy & Hydrology",
+            "content": "Directive 4.4 regarding Agricultural Agronomy & Hydrology:\nAll operating facilities must maintain an audit compliance score of at least 85 points. Facilities scoring at least 90 points receive expedited licensing status. Facilities scoring below 85 points are subject to mandatory operational reviews unless they have operated for more than 5 consecutive years with zero safety violations."
+          },
+          {
+            "tabId": "tab2",
+            "title": "Facility Audit Records",
+            "content": "Audit Inspection Summary for Region 4:\n- Plant North: Score 92; 3 years operating history; 0 safety violations.\n- Plant South: Score 84; 7 years operating history; 0 safety violations.\n- Plant East: Score 79; 2 years operating history; 1 safety violation.\n- Plant West: Score 88; 6 years operating history; 0 safety violations."
+          },
+          {
+            "tabId": "tab3",
+            "title": "Legal Appeals Protocol",
+            "content": "Protocol 9.2:\nFacilities placed under mandatory operational review may file an emergency stay within 14 business days. No facility with an active safety violation recorded in the preceding 12 months is eligible to file for an emergency stay."
+          }
+        ]
+      },
+      "options": [
+        "Plant North only",
+        "Plant North and Plant West only",
+        "Plant South and Plant West only",
+        "Plant North, Plant South, and Plant West",
+        "None of the facilities"
+      ],
+      "answer": "A",
+      "explanation": "Tab 1 specifies that a score of at least 90 is required for expedited licensing. Tab 2 shows only Plant North scored >= 90 (score 92). Plant West scored 88 (< 90). Thus, Plant North only qualifies.",
+      "trap": "Assuming Plant West qualifies because of its 6-year history (history only grants exemption from review, not expedited licensing).",
+      "estSeconds": 120
+    },
+    {
+      "id": "pt04_di19",
+      "test": 4,
+      "section": "DATA_INSIGHTS",
+      "type": "MULTI_SOURCE_REASONING",
+      "subtopic": "Multi-Source Reasoning",
+      "difficulty": "hard",
+      "difficultyScore": 8,
+      "stem": "Which facility at Metropolitan Water Authority is subject to mandatory operational review according to the regulatory directive for civil hydrology & aquifer management and the audit inspection records?",
+      "dataSource": {
+        "tabs": [
+          {
+            "tabId": "tab1",
+            "title": "Regulatory Directive: Agricultural Agronomy & Hydrology",
+            "content": "Directive 4.4 regarding Agricultural Agronomy & Hydrology:\nAll operating facilities must maintain an audit compliance score of at least 85 points. Facilities scoring at least 90 points receive expedited licensing status. Facilities scoring below 85 points are subject to mandatory operational reviews unless they have operated for more than 5 consecutive years with zero safety violations."
+          },
+          {
+            "tabId": "tab2",
+            "title": "Facility Audit Records",
+            "content": "Audit Inspection Summary for Region 4:\n- Plant North: Score 92; 3 years operating history; 0 safety violations.\n- Plant South: Score 84; 7 years operating history; 0 safety violations.\n- Plant East: Score 79; 2 years operating history; 1 safety violation.\n- Plant West: Score 88; 6 years operating history; 0 safety violations."
+          },
+          {
+            "tabId": "tab3",
+            "title": "Legal Appeals Protocol",
+            "content": "Protocol 9.2:\nFacilities placed under mandatory operational review may file an emergency stay within 14 business days. No facility with an active safety violation recorded in the preceding 12 months is eligible to file for an emergency stay."
+          }
+        ]
+      },
+      "options": [
+        "Plant East only",
+        "Plant South and Plant East only",
+        "Plant South only",
+        "Plant North and Plant East only",
+        "All four plants"
+      ],
+      "answer": "A",
+      "explanation": "Plants scoring below 85 are Plant South (84) and Plant East (79). However, Tab 1 exempts facilities operating >5 years with zero violations. Plant South has operated 7 years with 0 violations (exempt). Plant East has only 2 years and has a violation, so it is the ONLY plant subject to mandatory review.",
+      "trap": "Failing to check Plant South's 7-year zero-violation exemption in Tab 1.",
+      "estSeconds": 130
+    },
+    {
+      "id": "pt04_di20",
+      "test": 4,
+      "section": "DATA_INSIGHTS",
+      "type": "MULTI_SOURCE_REASONING",
+      "subtopic": "Multi-Source Reasoning",
+      "difficulty": "hard",
+      "difficultyScore": 9,
+      "stem": "Evaluating information across all three tabs for civil hydrology & aquifer management, which strategic conclusion regarding the financial return of deploying artesian reservoir recharge basin is most strongly supported?",
+      "dataSource": {
+        "tabs": [
+          {
+            "tabId": "tab1",
+            "title": "Regulatory Directive: Agricultural Agronomy & Hydrology",
+            "content": "Directive 4.4 regarding Agricultural Agronomy & Hydrology:\nAll operating facilities must maintain an audit compliance score of at least 85 points. Facilities scoring at least 90 points receive expedited licensing status. Facilities scoring below 85 points are subject to mandatory operational reviews unless they have operated for more than 5 consecutive years with zero safety violations."
+          },
+          {
+            "tabId": "tab2",
+            "title": "Facility Audit Records",
+            "content": "Audit Inspection Summary for Region 4:\n- Plant North: Score 92; 3 years operating history; 0 safety violations.\n- Plant South: Score 84; 7 years operating history; 0 safety violations.\n- Plant East: Score 79; 2 years operating history; 1 safety violation.\n- Plant West: Score 88; 6 years operating history; 0 safety violations."
+          },
+          {
+            "tabId": "tab3",
+            "title": "Legal Appeals Protocol",
+            "content": "Protocol 9.2:\nFacilities placed under mandatory operational review may file an emergency stay within 14 business days. No facility with an active safety violation recorded in the preceding 12 months is eligible to file for an emergency stay."
+          }
+        ]
+      },
+      "options": [
+        "No, because it has an active safety violation recorded in the preceding 12 months.",
+        "Yes, provided it files the paperwork within 14 business days.",
+        "Yes, because its compliance score was within 10 points of the 85 threshold.",
+        "No, because only facilities with more than 5 years operating history can file stays.",
+        "Yes, because emergency stays are automatically granted to all facilities."
+      ],
+      "answer": "A",
+      "explanation": "Tab 3 explicitly states: 'No facility with an active safety violation recorded in the preceding 12 months is eligible to file for an emergency stay.' Plant East has 1 safety violation (Tab 2), disqualifying it completely.",
+      "trap": "Focusing only on the 14-day filing window without checking the violation disqualification rule.",
+      "estSeconds": 115
+    }
+  ]
+}

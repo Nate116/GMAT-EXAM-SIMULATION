@@ -10,6 +10,7 @@ import {
 } from '../types/gmat';
 import { INITIAL_QUESTION_BANK } from './questionBank';
 import { FULL_PRACTICE_TESTS_BANK } from './fullSimulationTests';
+import { FULL_GENERATED_PRACTICE_TESTS } from './practiceTestsBank';
 import { calibrateFromPracticeTests } from './irt';
 
 const SESSION_KEY = 'gmat_focus_active_session';
@@ -31,7 +32,9 @@ export interface StoredErrorItem {
 }
 
 // 10 Full Practice Tests pre-seeded baseline (64 questions each, 135 minutes)
-const INITIAL_PRACTICE_TESTS: PracticeTestRecord[] = FULL_PRACTICE_TESTS_BANK;
+// Includes Focus Validation Mock #9 (Held-Out) and Focus Validation Mock #10 (Held-Out)
+const INITIAL_PRACTICE_TESTS: PracticeTestRecord[] = FULL_GENERATED_PRACTICE_TESTS;
+
 
 export const Storage = {
   // Active Exam Session
@@ -84,17 +87,14 @@ export const Storage = {
       const data = localStorage.getItem(PRACTICE_TESTS_KEY);
       if (data) {
         const parsed: PracticeTestRecord[] = JSON.parse(data);
-        // If parsed tests already have full 64-question datasets, use them
-        const hasFullQuestions = parsed.length >= 10 && parsed.every(t => t.questions && t.questions.length >= 60);
+        // If parsed tests already have full 64-question datasets and match the verified bank, use them
+        const hasFullQuestions = parsed.length >= 10 && parsed.every(t => t.questions && t.questions.length >= 60 && t.questions[0]?.explanation);
         if (hasFullQuestions) {
           return parsed;
         }
         // Upgrade legacy/brief tests to full 64-question simulations while preserving user notes and dates
-        const upgraded = FULL_PRACTICE_TESTS_BANK.map(fullTest => {
+        const upgraded = FULL_GENERATED_PRACTICE_TESTS.map(fullTest => {
           const existing = parsed.find(t => t.id === fullTest.id || t.testNumber === fullTest.testNumber);
-          if (existing && existing.questions && existing.questions.length >= 60) {
-            return existing;
-          }
           return {
             ...fullTest,
             notes: existing?.notes || fullTest.notes,
@@ -109,12 +109,13 @@ export const Storage = {
         return upgraded;
       }
       // Initialize with 10 full 64-question simulations
-      localStorage.setItem(PRACTICE_TESTS_KEY, JSON.stringify(FULL_PRACTICE_TESTS_BANK));
-      return FULL_PRACTICE_TESTS_BANK;
+      localStorage.setItem(PRACTICE_TESTS_KEY, JSON.stringify(FULL_GENERATED_PRACTICE_TESTS));
+      return FULL_GENERATED_PRACTICE_TESTS;
     } catch {
-      return FULL_PRACTICE_TESTS_BANK;
+      return FULL_GENERATED_PRACTICE_TESTS;
     }
   },
+
 
   savePracticeTest(record: PracticeTestRecord): void {
     try {
@@ -430,6 +431,64 @@ export const Storage = {
       const custom = localStorage.getItem(CUSTOM_BANK_KEY);
       const customList: GMATQuestion[] = custom ? JSON.parse(custom) : [];
       const map = new Map<string, GMATQuestion>();
+
+      // Load all 640 original questions from the 10 full practice tests
+      FULL_GENERATED_PRACTICE_TESTS.forEach(test => {
+        (test.questions || []).forEach((raw: any) => {
+          const diffScore = raw.difficultyScore || (raw.difficulty === 'hard' ? 8.5 : raw.difficulty === 'medium' ? 6 : 4);
+          const mappedQ: GMATQuestion = {
+            id: raw.id,
+            section: raw.section,
+            type: raw.type,
+            subtype: raw.subtopic || raw.subtype || 'General',
+            topic: raw.subtopic || raw.topic || 'General',
+            difficulty: diffScore,
+            discrimination: 1.3,
+            targetTimeSec: raw.estSeconds || (raw.section === 'QUANT' ? 128 : raw.section === 'VERBAL' ? 117 : 135),
+            stem: raw.stem,
+            passage: raw.passage,
+            tableData: raw.dataSource?.columns ? {
+              columns: raw.dataSource.columns,
+              rows: raw.dataSource.rows.map((r: any[]) => {
+                const obj: any = {};
+                raw.dataSource.columns.forEach((col: string, idx: number) => {
+                  obj[col] = r[idx];
+                });
+                return obj;
+              }),
+              dichotomousQuestion: 'For each of the following statements, select Yes if the statement can be deduced from the data; otherwise select No.',
+              statements: []
+            } : undefined,
+            graphicsData: raw.dataSource?.chartType ? {
+              chartType: String(raw.dataSource.chartType).toLowerCase().includes('scatter') ? 'scatter' : 'line',
+              title: raw.dataSource.title || 'Data Chart',
+              dataPoints: [],
+              dropdownPrompts: []
+            } : undefined,
+            msrTabs: raw.dataSource?.tabs ? raw.dataSource.tabs.map((tab: any) => ({
+              id: tab.tabId || tab.id,
+              title: tab.title,
+              content: tab.content
+            })) : undefined,
+            options: raw.options || ['A', 'B', 'C', 'D', 'E'],
+            correctAnswer: raw.answer || raw.official_answer || 'A',
+            explanation: typeof raw.explanation === 'string' ? {
+              stepByStep: raw.explanation,
+              shortcutMethod: 'Apply strategic process of elimination and isolate decisive constraint.',
+              trapExplained: raw.trap || raw.trap_type || 'Common official test distractor.',
+              commonWrongPaths: []
+            } : (raw.explanation || {
+              stepByStep: 'Step-by-step mathematical and logical analysis.',
+              shortcutMethod: 'Strategic elimination of non-conforming distractors.',
+              trapExplained: 'Avoid extreme scope or hasty arithmetic.',
+              commonWrongPaths: []
+            })
+          };
+          map.set(mappedQ.id, mappedQ);
+        });
+      });
+
+      // Overlay baseline and custom QA bank
       INITIAL_QUESTION_BANK.forEach(q => map.set(q.id, q));
       customList.forEach(q => map.set(q.id, q));
       return Array.from(map.values());

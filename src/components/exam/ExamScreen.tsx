@@ -114,6 +114,46 @@ export const ExamScreen: React.FC<ExamScreenProps> = ({ session: initialSession,
     });
   };
 
+  // Official GMAT Keyboard shortcuts: A-E for standard multiple choice, N for Next, B for Bookmark
+  useEffect(() => {
+    if (isBreakActive || showExitModal || showUnansweredWarning || editsExhaustedWarning) return;
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      // Don't trigger if user is typing in an input, textarea, or contentEditable
+      const target = e.target as HTMLElement;
+      if (target && (target.tagName === 'INPUT' || target.tagName === 'TEXTAREA' || target.isContentEditable)) {
+        return;
+      }
+
+      const key = e.key.toUpperCase();
+
+      // Bookmark shortcut (B)
+      if (key === 'B') {
+        e.preventDefault();
+        handleToggleBookmark();
+        return;
+      }
+
+      // Next question shortcut (N)
+      if (key === 'N') {
+        e.preventDefault();
+        handleNext();
+        return;
+      }
+
+      // Answer selection shortcuts (A, B, C, D, E) for standard options
+      if (['A', 'B', 'C', 'D', 'E'].includes(key) && currentQuestion) {
+        if (!currentQuestion.type || ['PROBLEM_SOLVING', 'DATA_SUFFICIENCY', 'CRITICAL_REASONING', 'READING_COMPREHENSION'].includes(currentQuestion.type)) {
+          e.preventDefault();
+          setCurrentAnswer(key);
+        }
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [isBreakActive, showExitModal, showUnansweredWarning, editsExhaustedWarning, currentQuestion, currentAnswer, handleToggleBookmark, handleNext]);
+
   // Verify answer correctness
   const checkIsCorrect = (q: GMATQuestion, answer: any): boolean => {
     if (answer === null || answer === undefined) return false;
