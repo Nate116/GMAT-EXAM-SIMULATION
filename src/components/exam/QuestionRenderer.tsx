@@ -159,8 +159,8 @@ export const QuestionRenderer: React.FC<QuestionRendererProps> = ({
   }
 
   // 3. Table Analysis: Sortable Columns & Dichotomous Statements
-  if (question.type === 'TABLE_ANALYSIS' && question.tableData) {
-    const { columns, rows, dichotomousQuestion, statements } = question.tableData;
+  if (question.type === 'TABLE_ANALYSIS' && question.tableData && question.tableData.columns && question.tableData.columns.length > 0 && question.tableData.statements && question.tableData.statements.length > 0) {
+    const { columns = [], rows = [], dichotomousQuestion = 'Evaluate whether each statement can be deduced from the data:', statements = [] } = question.tableData;
 
     // Sorting logic
     const sortedRows = [...rows].sort((a, b) => {
@@ -271,8 +271,8 @@ export const QuestionRenderer: React.FC<QuestionRendererProps> = ({
   }
 
   // 4. Graphics Interpretation: Visual Chart + Inline Dropdowns
-  if (question.type === 'GRAPHICS_INTERPRETATION' && question.graphicsData) {
-    const { chartType, title, dataPoints, dropdownPrompts } = question.graphicsData;
+  if (question.type === 'GRAPHICS_INTERPRETATION' && question.graphicsData && question.graphicsData.dropdownPrompts && question.graphicsData.dropdownPrompts.length > 0) {
+    const { chartType = 'line', title = 'Chart Analysis', dataPoints = [], dropdownPrompts = [] } = question.graphicsData;
     const currentSelections: Record<string, string> = typeof userAnswer === 'object' && userAnswer !== null ? userAnswer : {};
 
     const handleDropdownSelect = (dropId: string, val: string) => {
@@ -354,8 +354,8 @@ export const QuestionRenderer: React.FC<QuestionRendererProps> = ({
   }
 
   // 5. Two-Part Analysis: 2-Column Grid
-  if (question.type === 'TWO_PART_ANALYSIS' && question.twoPartData) {
-    const { column1Header, column2Header, rows } = question.twoPartData;
+  if (question.type === 'TWO_PART_ANALYSIS' && question.twoPartData && question.twoPartData.rows && question.twoPartData.rows.length > 0) {
+    const { column1Header = 'Part 1', column2Header = 'Part 2', rows = [] } = question.twoPartData;
     const currentCols: { col1?: string; col2?: string } = typeof userAnswer === 'object' && userAnswer !== null ? userAnswer : {};
 
     const handleSelect = (col: 'col1' | 'col2', rowId: string) => {
@@ -444,7 +444,7 @@ export const QuestionRenderer: React.FC<QuestionRendererProps> = ({
 
       {/* Options A through E */}
       <div className="space-y-3 pt-2">
-        {question.options.map((option, idx) => {
+        {(question.options && question.options.length > 0 ? question.options : ['A', 'B', 'C', 'D', 'E']).map((option, idx) => {
           const letter = String.fromCharCode(65 + idx);
           const isSelected = userAnswer === letter;
 

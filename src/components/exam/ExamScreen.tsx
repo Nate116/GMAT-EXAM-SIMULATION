@@ -8,6 +8,7 @@ import { ReviewScreen } from './ReviewScreen';
 import { BreakScreen } from './BreakScreen';
 import { estimateAbilityEAP, selectNextAdaptiveItem, mapDifficultyToB, buildScoreReport } from '../../lib/irt';
 import { Storage } from '../../lib/storage';
+import { ErrorBoundary } from '../common/ErrorBoundary';
 import { ArrowRight, AlertTriangle, CheckCircle, Flag } from 'lucide-react';
 
 interface ExamScreenProps {
@@ -440,9 +441,29 @@ export const ExamScreen: React.FC<ExamScreenProps> = ({ session: initialSession,
 
   if (!currentQuestion) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-slate-100">
-        <div className="p-8 bg-white rounded-xl shadow text-center">
-          <p className="text-slate-600 mb-4">Loading question data...</p>
+      <div className="min-h-screen flex items-center justify-center bg-slate-100 p-4">
+        <div className="p-8 bg-white rounded-2xl shadow-xl max-w-md w-full border border-slate-200 text-center space-y-4">
+          <div className="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mx-auto">
+            <AlertTriangle size={24} />
+          </div>
+          <h3 className="text-lg font-bold text-slate-900">Preparing Next Question</h3>
+          <p className="text-xs text-slate-600 leading-relaxed">
+            The question data for this section index is being prepared or has reached section completion.
+          </p>
+          <div className="flex items-center space-x-2 pt-2">
+            <button
+              onClick={() => handleSelectQuestionFromReview(0)}
+              className="flex-1 py-2 px-3 bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs rounded-xl shadow transition cursor-pointer"
+            >
+              Go to Question 1
+            </button>
+            <button
+              onClick={onExitToMenu}
+              className="py-2 px-3 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs rounded-xl transition cursor-pointer"
+            >
+              Exit to Menu
+            </button>
+          </div>
         </div>
       </div>
     );
@@ -489,11 +510,13 @@ export const ExamScreen: React.FC<ExamScreenProps> = ({ session: initialSession,
 
         {/* Question Area */}
         <div className="flex-1">
-          <QuestionRenderer
-            question={currentQuestion}
-            userAnswer={currentAnswer}
-            onAnswerChange={setCurrentAnswer}
-          />
+          <ErrorBoundary fallbackTitle="Question Display Error" onReset={() => window.location.reload()}>
+            <QuestionRenderer
+              question={currentQuestion}
+              userAnswer={currentAnswer}
+              onAnswerChange={setCurrentAnswer}
+            />
+          </ErrorBoundary>
         </div>
 
         {/* Unanswered Modal Warning */}

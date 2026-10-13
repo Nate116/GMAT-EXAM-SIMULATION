@@ -9,6 +9,7 @@ import { HistoryView } from './components/history/HistoryView';
 import { PracticeTestLibrary } from './components/library/PracticeTestLibrary';
 import { MathText } from './components/common/MathText';
 import { AcceptanceTestModal } from './components/common/AcceptanceTestModal';
+import { ErrorBoundary } from './components/common/ErrorBoundary';
 import gmacPercentilesData from '../data/gmac_percentiles.json';
 import {
   Trophy,
@@ -199,14 +200,22 @@ export default function App() {
   // 1. ACTIVE EXAM SCREEN
   if (currentView === 'ACTIVE_EXAM' && activeSession) {
     return (
-      <ExamScreen
-        session={activeSession}
-        onExamComplete={handleExamComplete}
-        onExitToMenu={() => {
+      <ErrorBoundary
+        fallbackTitle="Exam Simulation Error"
+        onReset={() => {
           setActiveSession(null);
           setCurrentView('DASHBOARD');
         }}
-      />
+      >
+        <ExamScreen
+          session={activeSession}
+          onExamComplete={handleExamComplete}
+          onExitToMenu={() => {
+            setActiveSession(null);
+            setCurrentView('DASHBOARD');
+          }}
+        />
+      </ErrorBoundary>
     );
   }
 
